@@ -1,0 +1,7600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🚀 Mega Enciclopedia de Astronomía</title>
+
+    <link rel="canonical" href="https://astronomia-2.vercel.app/">
+
+    <meta name="description" content="Explora el universo con la Mega Enciclopedia de Astronomía.">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌌 Mega Enciclopedia de Astronomía</title>
+
+<style>
+    /* Botón del menú */
+    
+    #menuBtn {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 9999;
+        padding: 12px 18px;
+        font-size: 20px;
+        background: #ffc300;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    /* Menú oculto */
+    
+    .menuOculto {
+        transform: translateX(-270px);
+        transition: 0.4s;
+    }
+    /* Contenido cuando el menú está oculto */
+    
+    .mainExpandido {
+        margin-left: 20px !important;
+        transition: 0.4s;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background: #000814;
+        color: white;
+    }
+    
+    header {
+        background: linear-gradient(90deg, #001d3d, #003566, #001d3d);
+        padding: 40px;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 60px;
+    }
+    
+    header p {
+        font-size: 25px;
+    }
+    
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        background: #001233;
+        overflow: auto;
+        padding-top: 20px;
+    }
+    
+    nav h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    nav a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        transition: .3s;
+    }
+    
+    nav a:hover {
+        background: #ffc300;
+        color: black;
+    }
+    
+    main {
+        margin-left: 260px;
+        padding: 30px;
+    }
+    
+    section {
+        margin-bottom: 60px;
+        padding: 30px;
+        background: #001845;
+        border-radius: 15px;
+    }
+    
+    section h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: gold;
+    }
+    
+    img {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 15px;
+        display: block;
+        margin: auto;
+    }
+    
+    .card {
+        background: #003566;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    
+    button {
+        padding: 15px;
+        background: gold;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    
+    button:hover {
+        background: orange;
+    }
+    
+    footer {
+        background: #001233;
+        text-align: center;
+        padding: 30px;
+    }
+    /* Botón del menú */
+    
+    #menuBtn {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 9999;
+        padding: 12px 18px;
+        font-size: 20px;
+        background: #ffc300;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    /* Menú oculto */
+    
+    .menuOculto {
+        transform: translateX(-270px);
+        transition: 0.4s;
+    }
+    /* Contenido cuando el menú está oculto */
+    
+    .mainExpandido {
+        margin-left: 20px !important;
+        transition: 0.4s;
+    }
+</style>
+
+</head>
+
+<script>
+    function toggleMenu() {
+
+        const menu = document.querySelector("nav");
+
+        const contenido = document.querySelector("main");
+
+        menu.classList.toggle("menuOculto");
+
+        contenido.classList.toggle("mainExpandido");
+
+    }
+</script>
+
+<body>
+
+    </div>
+
+    <button id="menuBtn" onclick="toggleMenu()">☰ Menú</button>
+
+
+    </script>
+
+    <nav>
+
+        <h2>🌌 MENÚ</h2>
+
+        <a href="#inicio">🏠 Inicio</a>
+
+        <a href="#universo">🌠 Universo</a>
+
+        <a href="#solar">☀ Sistema Solar</a>
+
+        <a href="#mercurio">☿ Mercurio</a>
+
+        <a href="#venus">♀ Venus</a>
+
+        <a href="#tierra">🌍 Tierra</a>
+
+        <a href="#marte">♂ Marte</a>
+
+        <a href="#jupiter">♃ Júpiter</a>
+
+        <a href="#saturno">♄ Saturno</a>
+
+        <a href="#urano">♅ Urano</a>
+
+        <a href="#neptuno">♆ Neptuno</a>
+
+        <a href="#sol">☀ El Sol</a>
+
+        <a href="#estrellas">⭐ Estrellas</a>
+
+        <a href="#galaxias">🌌 Galaxias</a>
+
+        <a href="#agujeros">🕳️ Agujeros Negros</a>
+
+        <a href="#exoplanetas">🪐 Exoplanetas</a>
+
+        <a href="#ejercicios">📝 Ejercicios</a>
+
+        <li>
+            <a href="#" onclick="abrirBuscador()">
+🔎 Buscador
+</a>
+        </li>
+
+    </nav>
+
+    <div id="buscadorMenu" style="display:none;padding:15px;">
+
+        <input type="text" id="buscar" placeholder="Buscar planeta..." style="width:100%;padding:10px;border-radius:8px;border:1px solid gray;">
+
+        <button onclick="buscarPlaneta()" style="width:100%;margin-top:10px;padding:10px;">
+🔎 Buscar
+</button>
+
+    </div>
+
+    <main>
+
+        <header id="inicio">
+
+            <h1>🌌 MEGA ENCICLOPEDIA DE ASTRONOMÍA</h1>
+
+            <p>Una página con muchísima información del universo.</p>
+
+        </header>
+
+        <section id="universo">
+
+            <h2>🌠 EL UNIVERSO</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/ESO_-_Milky_Way.jpg">
+
+            <div class="card">
+
+                <p>
+
+                    El universo es absolutamente todo lo que existe. Incluye galaxias, estrellas, planetas, agujeros negros, nebulosas, satélites, polvo cósmico, materia oscura, energía oscura y millones de millones de objetos que todavía no conocemos.
+
+                </p>
+
+                <p>
+
+                    Los científicos estiman que el universo tiene aproximadamente 13.800 millones de años y continúa expandiéndose. Cada segundo aparecen nuevos descubrimientos gracias a telescopios como el James Webb y otros observatorios.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="solar">
+
+            <h2>☀ SISTEMA SOLAR</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg">
+
+            <div class="card">
+
+
+
+                <p>
+
+                    El Sistema Solar está formado por el Sol, ocho planetas, más de doscientas lunas, miles de asteroides, cometas, planetas enanos y millones de pequeños cuerpos.
+
+                </p>
+    </main>
+
+</body>
+
+</html>
+
+<section id="mercurio">
+
+    <h2>☿ MERCURIO</h2>
+
+    <p>
+        Aquí irá una explicación muy extensa sobre Mercurio en la Parte 2.
+    </p>
+
+</section>
+
+<section id="mercurio">
+
+</section>
+
+<h2>☿ MERCURIO</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercurio">
+
+<div class="card">
+
+    <h3>¿Qué es Mercurio?</h3>
+
+    <p>
+
+        Mercurio es el planeta más cercano al Sol y también el más pequeño de los ocho planetas del Sistema Solar. A simple vista puede verse desde la Tierra durante algunos amaneceres y atardeceres, aunque es difícil observarlo porque nunca se aleja mucho del
+        Sol en el cielo.
+
+    </p>
+
+    <p>
+
+        Su nombre proviene del dios romano Mercurio, el mensajero de los dioses, famoso por su velocidad. Este nombre fue elegido porque el planeta se mueve muy rápidamente alrededor del Sol.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Datos generales</h3>
+
+    <ul>
+
+        <li>☀ Distancia media al Sol: 57 909 227 km.</li>
+
+        <li>🌎 Diámetro: 4 879 km.</li>
+
+        <li>⚖ Gravedad: 3.7 m/s².</li>
+
+        <li>🕒 Duración del día solar: aproximadamente 176 días terrestres.</li>
+
+        <li>📅 Duración del año: 88 días terrestres.</li>
+
+        <li>🌡 Temperatura máxima: 430 °C.</li>
+
+        <li>❄ Temperatura mínima: -180 °C.</li>
+
+        <li>🌑 Satélites naturales: ninguno.</li>
+
+        <li>💍 Anillos: no posee.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>Superficie</h3>
+
+    <p>
+
+        Mercurio presenta una superficie llena de cráteres causados por impactos de meteoritos y asteroides durante miles de millones de años. Muchos de estos cráteres son similares a los observados en la Luna.
+
+    </p>
+
+    <p>
+
+        Entre sus accidentes geográficos destacan enormes acantilados llamados escarpes, formados cuando el planeta se enfrió y se contrajo lentamente.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Temperatura extrema</h3>
+
+    <p>
+
+        Mercurio experimenta algunas de las diferencias de temperatura más grandes del Sistema Solar. Durante el día, las temperaturas pueden alcanzar aproximadamente 430 °C debido a la intensa radiación solar.
+
+    </p>
+
+    <p>
+
+        Durante la noche, al no contar con una atmósfera densa que retenga el calor, la temperatura puede descender hasta cerca de -180 °C.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Atmósfera</h3>
+
+    <p>
+
+        Mercurio prácticamente no posee una atmósfera tradicional. En su lugar tiene una exosfera extremadamente tenue formada por átomos de sodio, oxígeno, hidrógeno, helio y potasio.
+
+    </p>
+
+    <p>
+
+        Esta exosfera no protege al planeta de los impactos de meteoritos ni ayuda a conservar el calor.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Campo magnético</h3>
+
+    <p>
+
+        A pesar de ser pequeño, Mercurio tiene un campo magnético global. Esto indica que su núcleo metálico aún conserva una parte fundida en su interior.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Exploración espacial</h3>
+
+    <p>
+
+        Varias misiones han estudiado Mercurio.
+
+    </p>
+
+    <ul>
+
+        <li>Mariner 10 realizó los primeros sobrevuelos entre 1974 y 1975.</li>
+
+        <li>MESSENGER orbitó Mercurio entre 2011 y 2015 obteniendo miles de fotografías y datos científicos.</li>
+
+        <li>BepiColombo, una misión internacional, continúa viajando hacia Mercurio para estudiarlo con mayor detalle.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>Curiosidades</h3>
+
+    <ul>
+
+        <li>Es el planeta más pequeño del Sistema Solar.</li>
+
+        <li>Su año dura solo 88 días terrestres.</li>
+
+        <li>No tiene lunas.</li>
+
+        <li>No posee anillos.</li>
+
+        <li>Su núcleo ocupa gran parte de su volumen.</li>
+
+        <li>Es visible sin telescopio en determinadas épocas del año.</li>
+
+        <li>Tiene enormes variaciones de temperatura.</li>
+
+        <li>Su superficie recuerda a la de la Luna.</li>
+
+        <li>Su gravedad es aproximadamente el 38 % de la terrestre.</li>
+
+        <li>Recibe una enorme cantidad de radiación solar.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>Ejercicios sobre Mercurio</h3>
+
+    <ol>
+
+        <li>¿Cuál es el planeta más cercano al Sol?</li>
+
+        <li>¿Cuánto dura un año en Mercurio?</li>
+
+        <li>¿Tiene lunas?</li>
+
+        <li>¿Cuál es su temperatura máxima aproximada?</li>
+
+        <li>¿Qué misión orbitó Mercurio entre 2011 y 2015?</li>
+
+        <li>¿Por qué existen diferencias tan grandes de temperatura?</li>
+
+        <li>¿Qué tipo de superficie posee?</li>
+
+        <li>¿Qué significa que tenga un campo magnético?</li>
+
+        <li>Investiga quién descubrió el planeta en la antigüedad.</li>
+
+        <li>Dibuja Mercurio y escribe cinco características.</li>
+
+    </ol>
+
+    <button onclick="alert('Respuestas: 1) Mercurio. 2) 88 días. 3) No. 4) 430 °C. 5) MESSENGER.');">
+Ver respuestas
+</button>
+
+</div>
+<div class="card planeta" id="mercurio"></div>
+
+</section>
+
+<section id="venus">
+
+    <h2>♀ VENUS</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
+
+    <div class="card">
+
+        <h3>¿Qué es Venus?</h3>
+
+        <p>
+
+            Venus es el segundo planeta del Sistema Solar y recibe su nombre de la diosa romana del amor y la belleza. Es conocido como el planeta hermano de la Tierra porque ambos tienen tamaños y masas parecidos. Sin embargo, sus condiciones son completamente diferentes.
+
+        </p>
+
+        <p>
+
+            A simple vista, Venus es uno de los objetos más brillantes del cielo nocturno. Puede verse al amanecer o al atardecer, por eso muchas personas lo llaman la "Estrella de la Mañana" o la "Estrella de la Tarde", aunque en realidad no es una estrella sino
+            un planeta.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>2.º planeta</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro</td>
+                <td>12 104 km</td>
+            </tr>
+
+            <tr>
+                <td>Distancia media al Sol</td>
+                <td>108 millones de km</td>
+            </tr>
+
+            <tr>
+                <td>Duración del año</td>
+                <td>225 días terrestres</td>
+            </tr>
+
+            <tr>
+                <td>Duración del día</td>
+                <td>243 días terrestres</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura media</td>
+                <td>465 °C</td>
+            </tr>
+
+            <tr>
+                <td>Lunas</td>
+                <td>Ninguna</td>
+            </tr>
+
+            <tr>
+                <td>Anillos</td>
+                <td>No posee</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>La atmósfera de Venus</h3>
+
+        <p>
+
+            La atmósfera de Venus está formada principalmente por dióxido de carbono. También contiene nubes de ácido sulfúrico. La enorme cantidad de dióxido de carbono provoca un intenso efecto invernadero que atrapa el calor y convierte a Venus en el planeta más
+            caliente del Sistema Solar.
+
+        </p>
+
+        <p>
+
+            La presión atmosférica es aproximadamente noventa veces mayor que la de la Tierra. Un ser humano no podría sobrevivir en su superficie sin una nave especialmente diseñada.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Superficie</h3>
+
+        <p>
+
+            La superficie de Venus presenta volcanes gigantes, llanuras volcánicas, montañas y extensas regiones de roca sólida. Muchos científicos creen que el planeta tuvo una intensa actividad volcánica durante millones de años.
+
+        </p>
+
+        <p>
+
+            El radar utilizado por sondas espaciales permitió crear mapas muy detallados porque las densas nubes impiden observar directamente la superficie con luz visible.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Movimiento</h3>
+
+        <p>
+
+            Venus gira en sentido contrario al de la mayoría de los planetas. Este movimiento se conoce como rotación retrógrada. Además, un día en Venus dura más que un año venusiano.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Exploración espacial</h3>
+
+        <ul>
+
+            <li>Mariner 2 fue la primera nave en visitar Venus.</li>
+
+            <li>Las sondas soviéticas Venera lograron aterrizar sobre su superficie.</li>
+
+            <li>Magellan elaboró mapas muy detallados mediante radar.</li>
+
+            <li>Varias misiones modernas continúan estudiando su atmósfera.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Curiosidades</h3>
+
+        <ul>
+
+            <li>Es el planeta más caliente del Sistema Solar.</li>
+
+            <li>Puede alcanzar aproximadamente 465 °C.</li>
+
+            <li>Tiene volcanes enormes.</li>
+
+            <li>No posee lunas.</li>
+
+            <li>No tiene anillos.</li>
+
+            <li>Su atmósfera es extremadamente densa.</li>
+
+            <li>Las nubes contienen ácido sulfúrico.</li>
+
+            <li>Su rotación es retrógrada.</li>
+
+            <li>Un día dura más que un año.</li>
+
+            <li>Es uno de los objetos más brillantes del cielo.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Comparación con la Tierra</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Característica</th>
+
+                <th>Tierra</th>
+
+                <th>Venus</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Diámetro</td>
+
+                <td>12 742 km</td>
+
+                <td>12 104 km</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Lunas</td>
+
+                <td>1</td>
+
+                <td>0</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Temperatura media</td>
+
+                <td>15 °C</td>
+
+                <td>465 °C</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Agua líquida</td>
+
+                <td>Sí</td>
+
+                <td>No</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Vida conocida</td>
+
+                <td>Sí</td>
+
+                <td>No</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Ejercicios sobre Venus</h3>
+
+        <ol>
+
+            <li>¿Cuál es la temperatura media de Venus?</li>
+
+            <li>¿Por qué es tan caliente?</li>
+
+            <li>¿Cuántas lunas posee?</li>
+
+            <li>¿Qué gas domina su atmósfera?</li>
+
+            <li>¿Cómo se llama su movimiento de rotación?</li>
+
+            <li>¿Qué misión creó mapas por radar?</li>
+
+            <li>¿Por qué recibe el nombre de planeta hermano de la Tierra?</li>
+
+            <li>¿Qué contienen sus nubes?</li>
+
+            <li>¿Cuánto dura un año en Venus?</li>
+
+            <li>Investiga una misión espacial reciente hacia Venus.</li>
+
+        </ol>
+
+        <button onclick="alert('Respuestas: 1) 465 °C. 2) Efecto invernadero. 3) Ninguna. 4) Dióxido de carbono. 5) Rotación retrógrada. 6) Magellan. 7) Por su tamaño similar al de la Tierra. 8) Ácido sulfúrico. 9) 225 días.');">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<section id="tierra">
+    ...
+</section>
+
+<section id="tierra">
+
+    <h2>🌍 PLANETA TIERRA</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg">
+
+    <div class="card">
+
+        <h3>¿Qué es la Tierra?</h3>
+
+        <p>
+
+            La Tierra es el tercer planeta del Sistema Solar y el único lugar conocido donde existe vida. Se formó hace aproximadamente 4 540 millones de años a partir de una enorme nube de gas y polvo que dio origen al Sol y a los demás planetas.
+
+        </p>
+
+        <p>
+
+            Nuestro planeta posee agua líquida, una atmósfera rica en oxígeno y una temperatura adecuada para la existencia de millones de especies de seres vivos.
+
+        </p>
+
+        <p>
+
+            Vista desde el espacio, la Tierra aparece de color azul debido a que cerca del 71 % de su superficie está cubierta por océanos.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>Tercer planeta</td>
+            </tr>
+
+            <tr>
+                <td>Edad aproximada</td>
+                <td>4 540 millones de años</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro</td>
+                <td>12 742 km</td>
+            </tr>
+
+            <tr>
+                <td>Radio</td>
+                <td>6 371 km</td>
+            </tr>
+
+            <tr>
+                <td>Gravedad</td>
+                <td>9.8 m/s²</td>
+            </tr>
+
+            <tr>
+                <td>Duración del día</td>
+                <td>24 horas</td>
+            </tr>
+
+            <tr>
+                <td>Duración del año</td>
+                <td>365 días y 6 horas</td>
+            </tr>
+
+            <tr>
+                <td>Satélites</td>
+                <td>1 (La Luna)</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura media</td>
+                <td>15 °C</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Capas de la Tierra</h3>
+
+        <p>
+
+            La Tierra está formada por varias capas que poseen diferentes características físicas y químicas.
+
+        </p>
+
+        <ul>
+
+            <li><b>Corteza:</b> es la capa donde vivimos.</li>
+
+            <li><b>Manto:</b> formado por rocas muy calientes.</li>
+
+            <li><b>Núcleo externo:</b> hierro y níquel líquidos.</li>
+
+            <li><b>Núcleo interno:</b> hierro sólido con temperaturas superiores a los 5 000 °C.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>La atmósfera</h3>
+
+        <p>
+
+            La atmósfera es una capa de gases que rodea la Tierra y protege la vida.
+
+        </p>
+
+        <p>
+
+            Filtra gran parte de la radiación ultravioleta del Sol, mantiene una temperatura adecuada y permite la respiración de la mayoría de los seres vivos.
+
+        </p>
+
+        <p>
+
+            Está formada aproximadamente por:
+
+        </p>
+
+        <ul>
+
+            <li>78 % nitrógeno.</li>
+
+            <li>21 % oxígeno.</li>
+
+            <li>1 % otros gases.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Movimientos de la Tierra</h3>
+
+        <h4>Rotación</h4>
+
+        <p>
+
+            Es el movimiento que realiza la Tierra sobre su propio eje. Dura aproximadamente 24 horas y produce el día y la noche.
+
+        </p>
+
+        <h4>Traslación</h4>
+
+        <p>
+
+            Es el movimiento alrededor del Sol. Dura aproximadamente 365 días y es responsable de las estaciones del año.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>¿Por qué existe vida en la Tierra?</h3>
+
+        <p>
+
+            La Tierra reúne varias condiciones que favorecen la vida:
+
+        </p>
+
+        <ul>
+
+            <li>Agua líquida.</li>
+
+            <li>Temperaturas adecuadas.</li>
+
+            <li>Oxígeno.</li>
+
+            <li>Campo magnético.</li>
+
+            <li>Atmósfera protectora.</li>
+
+            <li>Distancia adecuada al Sol.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Curiosidades</h3>
+
+        <ul>
+
+            <li>🌍 Es el único planeta con vida confirmada.</li>
+
+            <li>🌊 El 71 % de su superficie está cubierta por agua.</li>
+
+            <li>🌎 Posee un único satélite natural: la Luna.</li>
+
+            <li>🌋 Tiene miles de volcanes.</li>
+
+            <li>🧲 Su campo magnético protege al planeta del viento solar.</li>
+
+            <li>🌧️ Presenta una enorme diversidad de climas.</li>
+
+            <li>🌲 Alberga millones de especies.</li>
+
+            <li>🏔️ La montaña más alta es el Monte Everest.</li>
+
+            <li>🌊 El océano Pacífico es el más grande.</li>
+
+            <li>🌍 Continúa cambiando debido al movimiento de las placas tectónicas.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Cuál es el tercer planeta del Sistema Solar?</li>
+
+            <li>¿Qué porcentaje de la Tierra está cubierto por agua?</li>
+
+            <li>¿Cómo se llama su satélite natural?</li>
+
+            <li>¿Cuánto dura la rotación?</li>
+
+            <li>¿Cuánto dura la traslación?</li>
+
+            <li>¿Cuál es la gravedad terrestre?</li>
+
+            <li>¿Qué capa protege de la radiación solar?</li>
+
+            <li>¿Qué gas es el más abundante en la atmósfera?</li>
+
+            <li>¿Cuál es la temperatura media del planeta?</li>
+
+            <li>Menciona tres razones por las que existe vida en la Tierra.</li>
+
+        </ol>
+
+        <button onclick="alert('Respuestas: 1) La Tierra. 2) 71 %. 3) La Luna. 4) 24 horas. 5) 365 días y 6 horas. 6) 9.8 m/s². 7) La atmósfera. 8) Nitrógeno. 9) 15 °C. 10) Agua líquida, atmósfera y distancia adecuada al Sol.')">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTINENTES ================= -->
+
+<div class="card">
+
+    <h3>🌎 Los Continentes</h3>
+
+    <p>
+
+        La Tierra posee siete continentes. Cada uno tiene características geográficas, climáticas y culturales únicas. Los continentes están formados por enormes masas de tierra separadas principalmente por océanos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌎 América</h3>
+
+    <p>
+
+        América es el segundo continente más grande del planeta. Se divide en América del Norte, América Central y América del Sur. Posee desiertos, selvas tropicales, enormes cadenas montañosas, volcanes activos, ríos gigantes como el Amazonas y una gran diversidad
+        de culturas y ecosistemas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌍 África</h3>
+
+    <p>
+
+        África es el continente donde surgieron los primeros seres humanos. Cuenta con el desierto del Sahara, la selva del Congo, el río Nilo y una enorme variedad de animales como leones, elefantes, jirafas e hipopótamos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌏 Asia</h3>
+
+    <p>
+
+        Asia es el continente más grande y más poblado del mundo. Aquí se encuentran el monte Everest, la Gran Muralla China, grandes desiertos, bosques, selvas y miles de culturas diferentes.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌍 Europa</h3>
+
+    <p>
+
+        Europa destaca por su historia, sus monumentos, su desarrollo científico y numerosas civilizaciones antiguas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌏 Oceanía</h3>
+
+    <p>
+
+        Oceanía está formada por Australia, Nueva Zelanda y miles de islas del océano Pacífico. Posee especies únicas como el canguro y el koala.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>❄ Antártida</h3>
+
+    <p>
+
+        La Antártida es el continente más frío del planeta. Más del 98 % de su superficie está cubierta por hielo. No posee población permanente, pero numerosos científicos viven allí temporalmente para realizar investigaciones.
+
+    </p>
+
+</div>
+
+<!-- ================= OCEANOS ================= -->
+
+<div class="card">
+
+    <h2>🌊 Los Océanos</h2>
+
+    <p>
+
+        Los océanos cubren aproximadamente el 71 % de la superficie terrestre. Regulan el clima, producen gran parte del oxígeno y albergan millones de especies.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌊 Océano Pacífico</h3>
+
+    <p>
+
+        Es el océano más grande y profundo del planeta. Ocupa casi un tercio de toda la superficie terrestre. En él se encuentra la Fosa de las Marianas, el punto más profundo conocido de los océanos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌊 Océano Atlántico</h3>
+
+    <p>
+
+        Es el segundo océano más grande. Separa América de Europa y África. Ha sido una importante ruta comercial durante siglos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌊 Océano Índico</h3>
+
+    <p>
+
+        Baña las costas de África, Asia y Australia. Sus aguas son fundamentales para el comercio marítimo internacional.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌊 Océano Ártico</h3>
+
+    <p>
+
+        Es el océano más pequeño. Gran parte permanece congelado durante el invierno. Habitan osos polares, focas, ballenas y morsas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌊 Océano Antártico</h3>
+
+    <p>
+
+        Rodea completamente la Antártida. Presenta algunas de las aguas más frías del planeta. Es hogar de pingüinos, focas y enormes ballenas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>📊 Comparación de los océanos</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Océano</th>
+
+            <th>Tamaño</th>
+
+            <th>Temperatura</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Pacífico</td>
+
+            <td>Muy grande</td>
+
+            <td>Variable</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Atlántico</td>
+
+            <td>Grande</td>
+
+            <td>Variable</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Índico</td>
+
+            <td>Grande</td>
+
+            <td>Cálida</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Ártico</td>
+
+            <td>Pequeño</td>
+
+            <td>Muy fría</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Antártico</td>
+
+            <td>Grande</td>
+
+            <td>Extremadamente fría</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>📝 Mini ejercicio</h2>
+
+    <ol>
+
+        <li>¿Cuál es el océano más grande?</li>
+
+        <li>¿Cuál es el continente más grande?</li>
+
+        <li>¿Cuál es el continente más frío?</li>
+
+        <li>¿Qué porcentaje de la Tierra está cubierto por agua?</li>
+
+        <li>¿Cuál es el océano más pequeño?</li>
+
+    </ol>
+
+    <button onclick="alert('1. Pacífico\n2. Asia\n3. Antártida\n4. 71%\n5. Ártico')">
+
+Ver respuestas
+
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- CLIMA Y ATMÓSFERA -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h2>🌦️ El Clima de la Tierra</h2>
+
+    <p>
+
+        El clima es el conjunto de condiciones atmosféricas que predominan en una región durante largos períodos de tiempo. Está influenciado por la temperatura, la humedad, la presión atmosférica, el viento, la altitud y la cercanía al mar.
+
+    </p>
+
+    <p>
+
+        Gracias al clima existen diferentes ecosistemas como selvas, desiertos, bosques, sabanas, montañas, tundras y regiones polares.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌍 Principales tipos de clima</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Clima</th>
+            <th>Características</th>
+        </tr>
+
+        <tr>
+            <td>Tropical</td>
+            <td>Caluroso y lluvioso durante gran parte del año.</td>
+        </tr>
+
+        <tr>
+            <td>Desértico</td>
+            <td>Muy seco, casi no llueve.</td>
+        </tr>
+
+        <tr>
+            <td>Templado</td>
+            <td>Presenta cuatro estaciones bien definidas.</td>
+        </tr>
+
+        <tr>
+            <td>Polar</td>
+            <td>Temperaturas extremadamente bajas.</td>
+        </tr>
+
+        <tr>
+            <td>Mediterráneo</td>
+            <td>Veranos secos e inviernos lluviosos.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>🌤️ Las estaciones del año</h2>
+
+    <p>
+
+        Las estaciones ocurren debido a la inclinación del eje terrestre mientras la Tierra gira alrededor del Sol.
+
+    </p>
+
+    <ul>
+
+        <li>🌸 Primavera: florecen muchas plantas.</li>
+
+        <li>☀️ Verano: temperaturas elevadas.</li>
+
+        <li>🍂 Otoño: caen las hojas de muchos árboles.</li>
+
+        <li>❄️ Invierno: temperaturas bajas y nieve en muchas regiones.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>🌬️ La atmósfera terrestre</h2>
+
+    <p>
+
+        La atmósfera protege nuestro planeta de la radiación solar y de muchos meteoritos. Sin ella sería imposible la vida tal como la conocemos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🛰️ Capas de la atmósfera</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Capa</th>
+
+            <th>Altura aproximada</th>
+
+            <th>Función</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Troposfera</td>
+
+            <td>0 - 12 km</td>
+
+            <td>Donde ocurre el clima.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Estratosfera</td>
+
+            <td>12 - 50 km</td>
+
+            <td>Contiene la capa de ozono.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Mesosfera</td>
+
+            <td>50 - 85 km</td>
+
+            <td>Aquí se queman muchos meteoritos.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Termosfera</td>
+
+            <td>85 - 600 km</td>
+
+            <td>Se producen auroras polares.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Exosfera</td>
+
+            <td>Más de 600 km</td>
+
+            <td>Transición hacia el espacio.</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>🧲 Campo Magnético</h2>
+
+    <p>
+
+        La Tierra posee un poderoso campo magnético generado por el movimiento del hierro líquido del núcleo externo. Este campo desvía gran parte del viento solar y protege la atmósfera.
+
+    </p>
+
+    <p>
+
+        Sin el campo magnético, gran parte de la atmósfera podría perderse con el tiempo y la radiación solar afectaría gravemente a los seres vivos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌌 Auroras Polares</h2>
+
+    <p>
+
+        Las auroras boreales y australes se producen cuando partículas del Sol chocan con los gases de la atmósfera cerca de los polos. El resultado son impresionantes luces verdes, rojas, violetas y azules en el cielo nocturno.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌪️ Fenómenos Meteorológicos</h2>
+
+    <ul>
+
+        <li>Tormentas eléctricas.</li>
+
+        <li>Huracanes.</li>
+
+        <li>Tornados.</li>
+
+        <li>Granizadas.</li>
+
+        <li>Nevadas.</li>
+
+        <li>Olas de calor.</li>
+
+        <li>Frentes fríos.</li>
+
+        <li>Sequías.</li>
+
+        <li>Inundaciones.</li>
+
+        <li>Niebla.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📚 Curiosidades</h2>
+
+    <ul>
+
+        <li>La atmósfera pesa aproximadamente 5.15 × 10¹⁸ kg.</li>
+
+        <li>La capa de ozono absorbe gran parte de la radiación ultravioleta.</li>
+
+        <li>Cada segundo caen alrededor de 100 rayos sobre la Tierra.</li>
+
+        <li>Las auroras pueden observarse desde el espacio.</li>
+
+        <li>El viento más rápido registrado superó los 400 km/h en un tornado.</li>
+
+        <li>La presión atmosférica disminuye con la altura.</li>
+
+        <li>La Tierra recibe constantemente partículas provenientes del Sol.</li>
+
+        <li>La lluvia forma parte del ciclo del agua.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📝 Ejercicios</h2>
+
+    <ol>
+
+        <li>¿Qué capa contiene la capa de ozono?</li>
+
+        <li>¿Cuál es la capa más cercana al suelo?</li>
+
+        <li>¿Qué provoca las estaciones?</li>
+
+        <li>¿Qué protege el campo magnético?</li>
+
+        <li>¿Dónde ocurren las auroras?</li>
+
+        <li>¿Qué capa quema la mayoría de los meteoritos?</li>
+
+        <li>¿Cuál es el clima más frío?</li>
+
+        <li>¿Qué gas es el más abundante en la atmósfera?</li>
+
+        <li>¿Qué produce un huracán?</li>
+
+        <li>¿Qué es la exosfera?</li>
+
+    </ol>
+
+    <button onclick="alert('1) Estratosfera\n2) Troposfera\n3) La inclinación del eje terrestre\n4) Protege del viento solar\n5) Cerca de los polos\n6) Mesosfera\n7) Polar\n8) Nitrógeno\n9) Es un fenómeno meteorológico muy intenso\n10) La capa más externa de la atmósfera.')">
+
+Ver respuestas
+
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- LA LUNA -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h2>🌙 La Luna: El único satélite natural de la Tierra</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="La Luna">
+
+    <p>
+
+        La Luna es el único satélite natural de la Tierra y el quinto satélite más grande del Sistema Solar. Ha acompañado a nuestro planeta durante aproximadamente 4 500 millones de años.
+
+    </p>
+
+    <p>
+
+        Es el objeto más brillante del cielo nocturno y ha sido observada por todas las civilizaciones antiguas. Ha servido para crear calendarios, estudiar los eclipses y orientar a los navegantes.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>📊 Datos generales</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Dato</th>
+            <th>Valor</th>
+        </tr>
+
+        <tr>
+            <td>Diámetro</td>
+            <td>3 474 km</td>
+        </tr>
+
+        <tr>
+            <td>Distancia media a la Tierra</td>
+            <td>384 400 km</td>
+        </tr>
+
+        <tr>
+            <td>Gravedad</td>
+            <td>1.62 m/s²</td>
+        </tr>
+
+        <tr>
+            <td>Edad</td>
+            <td>4 500 millones de años</td>
+        </tr>
+
+        <tr>
+            <td>Temperatura</td>
+            <td>Entre -173 °C y 127 °C</td>
+        </tr>
+
+        <tr>
+            <td>Tiempo de una órbita</td>
+            <td>27.3 días</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>🌕 Formación de la Luna</h2>
+
+    <p>
+
+        La teoría más aceptada indica que la Luna se formó cuando un objeto del tamaño aproximado de Marte chocó contra la Tierra primitiva hace miles de millones de años.
+
+    </p>
+
+    <p>
+
+        Los fragmentos expulsados por el impacto comenzaron a unirse por gravedad hasta formar la Luna.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌑 Fases de la Luna</h2>
+
+    <ul>
+
+        <li>🌑 Luna Nueva</li>
+
+        <li>🌒 Luna Creciente</li>
+
+        <li>🌓 Cuarto Creciente</li>
+
+        <li>🌔 Gibosa Creciente</li>
+
+        <li>🌕 Luna Llena</li>
+
+        <li>🌖 Gibosa Menguante</li>
+
+        <li>🌗 Cuarto Menguante</li>
+
+        <li>🌘 Luna Menguante</li>
+
+    </ul>
+
+    <p>
+
+        Las fases se producen porque observamos diferentes partes iluminadas por el Sol mientras la Luna gira alrededor de la Tierra.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌊 Las Mareas</h2>
+
+    <p>
+
+        La fuerza gravitatoria de la Luna provoca las mareas en los océanos terrestres. Cuando la Luna y el Sol se alinean se producen mareas más intensas llamadas mareas vivas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌘 Eclipses</h2>
+
+    <h3>🌞 Eclipse Solar</h3>
+
+    <p>
+
+        Ocurre cuando la Luna se coloca entre la Tierra y el Sol.
+
+    </p>
+
+    <h3>🌕 Eclipse Lunar</h3>
+
+    <p>
+
+        Sucede cuando la Tierra se coloca entre el Sol y la Luna.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🚀 Exploración Lunar</h2>
+
+    <ul>
+
+        <li>Programa Apollo.</li>
+
+        <li>Apollo 11 fue la primera misión en llevar humanos a la Luna.</li>
+
+        <li>Neil Armstrong fue la primera persona en caminar sobre la superficie lunar.</li>
+
+        <li>Buzz Aldrin fue el segundo astronauta en caminar sobre ella.</li>
+
+        <li>Actualmente varios países planean regresar con nuevas misiones.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>🌋 Superficie Lunar</h2>
+
+    <p>
+
+        La Luna posee miles de cráteres producidos por impactos de meteoritos. También tiene montañas, llanuras volcánicas llamadas mares lunares y enormes acantilados.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>📚 Curiosidades</h2>
+
+    <ul>
+
+        <li>Siempre vemos prácticamente la misma cara de la Luna.</li>
+
+        <li>No posee atmósfera densa.</li>
+
+        <li>No tiene océanos.</li>
+
+        <li>No posee clima como la Tierra.</li>
+
+        <li>Los astronautas dejaron instrumentos científicos que aún proporcionan información.</li>
+
+        <li>La gravedad lunar es aproximadamente una sexta parte de la terrestre.</li>
+
+        <li>La luz de la Luna es en realidad luz solar reflejada.</li>
+
+        <li>Cada año la Luna se aleja unos centímetros de la Tierra.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📝 Ejercicios</h2>
+
+    <ol>
+
+        <li>¿Cuál es la distancia media entre la Tierra y la Luna?</li>
+
+        <li>¿Cómo se llama la teoría más aceptada sobre el origen de la Luna?</li>
+
+        <li>¿Cuántas fases principales tiene?</li>
+
+        <li>¿Qué provoca las mareas?</li>
+
+        <li>¿Qué misión llevó al primer ser humano a la Luna?</li>
+
+        <li>¿Quién fue el primer astronauta en caminar sobre ella?</li>
+
+        <li>¿Cuál es la gravedad lunar?</li>
+
+        <li>¿Qué son los mares lunares?</li>
+
+        <li>¿Por qué siempre vemos casi la misma cara de la Luna?</li>
+
+        <li>¿La Luna produce luz propia?</li>
+
+    </ol>
+
+    <button onclick="alert('1) 384 400 km\n2) Teoría del gran impacto\n3) Ocho fases principales\n4) La gravedad de la Luna\n5) Apollo 11\n6) Neil Armstrong\n7) 1.62 m/s²\n8) Llanuras volcánicas\n9) Porque rota al mismo ritmo que orbita la Tierra\n10) No, refleja la luz del Sol')">
+
+Ver respuestas
+
+</button>
+
+</div>
+
+<section id="sol">
+
+    <h2>☀ EL SOL</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" alt="El Sol">
+
+    <div class="card">
+
+        <h3>¿Qué es el Sol?</h3>
+
+        <p>
+
+            El Sol es una estrella de tamaño mediano ubicada en el centro del Sistema Solar. Todos los planetas, asteroides, cometas y otros cuerpos giran alrededor de él debido a su enorme gravedad.
+
+        </p>
+
+        <p>
+
+            Tiene aproximadamente 4 600 millones de años y se encuentra en la mitad de su vida. Los astrónomos estiman que continuará brillando durante unos 5 000 millones de años más antes de transformarse en una gigante roja.
+
+        </p>
+
+        <p>
+
+            El Sol contiene aproximadamente el 99.8 % de toda la masa del Sistema Solar.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Tipo</td>
+                <td>Estrella de secuencia principal (tipo G2V)</td>
+            </tr>
+
+            <tr>
+                <td>Edad</td>
+                <td>4 600 millones de años</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro</td>
+                <td>1 392 700 km</td>
+            </tr>
+
+            <tr>
+                <td>Masa</td>
+                <td>1.989 × 10³⁰ kg</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura superficial</td>
+                <td>≈ 5 500 °C</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura del núcleo</td>
+                <td>≈ 15 millones °C</td>
+            </tr>
+
+            <tr>
+                <td>Distancia a la Tierra</td>
+                <td>149.6 millones de km</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>¿De qué está formado?</h3>
+
+        <p>
+
+            El Sol está compuesto principalmente por hidrógeno y helio.
+
+        </p>
+
+        <ul>
+
+            <li>Hidrógeno: aproximadamente 74 %</li>
+
+            <li>Helio: aproximadamente 24 %</li>
+
+            <li>Otros elementos: cerca del 2 %</li>
+
+        </ul>
+
+        <p>
+
+            En su núcleo ocurre la fusión nuclear, un proceso donde núcleos de hidrógeno se unen para formar helio y liberar enormes cantidades de energía.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Capas del Sol</h3>
+
+        <table border="1">
+
+            <tr>
+
+                <th>Capa</th>
+
+                <th>Descripción</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Núcleo</td>
+
+                <td>Produce energía mediante fusión nuclear.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Zona radiativa</td>
+
+                <td>La energía viaja en forma de radiación.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Zona convectiva</td>
+
+                <td>El calor asciende y desciende constantemente.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Fotosfera</td>
+
+                <td>Es la superficie visible del Sol.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cromosfera</td>
+
+                <td>Capa rojiza visible durante eclipses.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Corona</td>
+
+                <td>La capa más externa, visible durante un eclipse total.</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Importancia del Sol</h3>
+
+        <p>
+
+            Sin el Sol no existiría la vida en la Tierra. Proporciona luz, calor y la energía necesaria para la fotosíntesis de las plantas. También impulsa el clima, el ciclo del agua y muchas otras funciones esenciales para nuestro planeta.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Curiosidades</h3>
+
+        <ul>
+
+            <li>☀ La luz del Sol tarda unos 8 minutos y 20 segundos en llegar a la Tierra.</li>
+
+            <li>☀ En un segundo libera más energía de la que la humanidad consume en muchos años.</li>
+
+            <li>☀ Representa casi toda la masa del Sistema Solar.</li>
+
+            <li>☀ Es una estrella de tamaño medio.</li>
+
+            <li>☀ Su gravedad mantiene unidos a todos los planetas.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué tipo de estrella es el Sol?</li>
+
+            <li>¿Qué proceso produce su energía?</li>
+
+            <li>¿Cuánto tarda la luz solar en llegar a la Tierra?</li>
+
+            <li>¿Cuál es la temperatura aproximada del núcleo?</li>
+
+            <li>¿Cuál es la capa visible del Sol?</li>
+
+        </ol>
+
+        <button onclick="alert('1) Estrella de secuencia principal G2V\n2) Fusión nuclear\n3) Aproximadamente 8 minutos y 20 segundos\n4) Aproximadamente 15 millones °C\n5) Fotosfera')">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PARTE 5.2A - ACTIVIDAD SOLAR -->
+<!-- ===================================================== -->
+
+<div class="card">
+
+    <h2>🌞 Manchas Solares</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Sunspots.jpg" alt="Manchas solares">
+
+    <p>
+
+        Las manchas solares son regiones oscuras que aparecen en la superficie del Sol. Aunque parecen negras, realmente son menos calientes que el resto de la fotosfera. Su temperatura ronda los 3 500 a 4 500 °C.
+
+    </p>
+
+    <p>
+
+        Estas manchas aparecen debido a intensos campos magnéticos que impiden que parte del calor llegue normalmente a la superficie.
+
+    </p>
+
+    <p>
+
+        Algunas manchas solares son pequeñas, mientras que otras pueden ser varias veces más grandes que la Tierra.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🔥 Erupciones Solares</h2>
+
+    <p>
+
+        Las erupciones solares son explosiones gigantescas que liberan enormes cantidades de energía. En pocos minutos pueden liberar más energía que millones de bombas nucleares.
+
+    </p>
+
+    <p>
+
+        Durante una erupción se expulsan rayos X, radiación ultravioleta, ondas de radio y partículas cargadas.
+
+    </p>
+
+    <p>
+
+        Cuando estas partículas llegan cerca de la Tierra pueden afectar satélites, sistemas GPS, comunicaciones por radio e incluso redes eléctricas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌋 Eyecciones de Masa Coronal</h2>
+
+    <p>
+
+        Las Eyecciones de Masa Coronal (CME) ocurren cuando el Sol expulsa enormes cantidades de plasma hacia el espacio. Cada eyección puede contener miles de millones de toneladas de partículas.
+
+    </p>
+
+    <p>
+
+        Si una CME apunta hacia la Tierra puede producir tormentas geomagnéticas y auroras muy intensas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🌌 El Viento Solar</h2>
+
+    <p>
+
+        El viento solar es un flujo constante de partículas cargadas que sale del Sol en todas las direcciones. Viaja a velocidades que pueden superar los 800 kilómetros por segundo.
+
+    </p>
+
+    <p>
+
+        El campo magnético terrestre desvía la mayor parte de estas partículas, protegiendo la vida del exceso de radiación.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>🧲 Relación con la Tierra</h2>
+
+    <ul>
+
+        <li>Produce auroras boreales.</li>
+
+        <li>Produce auroras australes.</li>
+
+        <li>Puede afectar satélites.</li>
+
+        <li>Puede alterar las comunicaciones.</li>
+
+        <li>Puede afectar sistemas GPS.</li>
+
+        <li>Puede provocar tormentas geomagnéticas.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📚 Curiosidades</h2>
+
+    <ul>
+
+        <li>☀️ Cada segundo el Sol convierte millones de toneladas de hidrógeno en helio.</li>
+
+        <li>☀️ Su gravedad mantiene unidos todos los planetas.</li>
+
+        <li>☀️ La corona solar puede ser más caliente que la superficie.</li>
+
+        <li>☀️ Las manchas solares cambian constantemente.</li>
+
+        <li>☀️ El Sol gira, pero no todas sus zonas lo hacen a la misma velocidad.</li>
+
+        <li>☀️ Cerca de los polos gira más lentamente que cerca del ecuador.</li>
+
+        <li>☀️ La actividad solar aumenta y disminuye en ciclos.</li>
+
+        <li>☀️ Gracias al Sol existe la fotosíntesis.</li>
+
+        <li>☀️ Toda la energía de los combustibles fósiles proviene indirectamente del Sol.</li>
+
+        <li>☀️ El Sol es una de las miles de millones de estrellas de la Vía Láctea.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📝 Ejercicios</h2>
+
+    <ol>
+
+        <li>¿Qué son las manchas solares?</li>
+
+        <li>¿Por qué son oscuras?</li>
+
+        <li>¿Qué es una erupción solar?</li>
+
+        <li>¿Qué significa CME?</li>
+
+        <li>¿Qué es el viento solar?</li>
+
+        <li>¿Qué protege a la Tierra del viento solar?</li>
+
+        <li>¿Qué fenómenos luminosos produce?</li>
+
+        <li>¿Cómo afectan las tormentas solares a los satélites?</li>
+
+        <li>¿Cuál puede ser la velocidad del viento solar?</li>
+
+        <li>¿Cada cuánto cambia la actividad solar?</li>
+
+    </ol>
+
+    <button onclick="alert('1. Regiones menos calientes del Sol. 2. Debido a intensos campos magnéticos. 3. Una enorme explosión de energía. 4. Eyección de Masa Coronal. 5. Flujo de partículas cargadas. 6. El campo magnético terrestre. 7. Auroras. 8. Pueden afectar su funcionamiento. 9. Más de 800 km/s. 10. Sigue un ciclo aproximado de 11 años.')">
+
+Ver respuestas
+
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- PARTE 5.2B - MISIONES, FUTURO Y EJERCICIOS -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h2>🚀 Misiones Espaciales para Estudiar el Sol</h2>
+
+    <p>
+
+        Durante muchos años diferentes agencias espaciales han enviado satélites y sondas para estudiar el Sol. Gracias a estas misiones hoy conocemos mucho mejor su estructura, su campo magnético, el viento solar y las erupciones solares.
+
+    </p>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Misión</th>
+
+            <th>Año</th>
+
+            <th>Objetivo</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Parker Solar Probe</td>
+
+            <td>2018</td>
+
+            <td>Acercarse más que cualquier otra nave al Sol.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Solar Orbiter</td>
+
+            <td>2020</td>
+
+            <td>Fotografiar los polos solares y estudiar el viento solar.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SOHO</td>
+
+            <td>1995</td>
+
+            <td>Observar continuamente el Sol.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SDO</td>
+
+            <td>2010</td>
+
+            <td>Tomar imágenes de alta resolución del Sol.</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>⭐ Comparación del Sol con otras estrellas</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Característica</th>
+
+            <th>Sol</th>
+
+            <th>Betelgeuse</th>
+
+            <th>Sirio</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Tipo</td>
+
+            <td>G2V</td>
+
+            <td>Supergigante roja</td>
+
+            <td>Estrella blanca</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Tamaño</td>
+
+            <td>Mediano</td>
+
+            <td>Gigante</td>
+
+            <td>Mayor que el Sol</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Temperatura</td>
+
+            <td>≈5500°C</td>
+
+            <td>≈3500°C</td>
+
+            <td>≈9900°C</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h2>⏳ El futuro del Sol</h2>
+
+    <p>
+
+        Actualmente el Sol se encuentra aproximadamente a la mitad de su vida. Dentro de unos cinco mil millones de años agotará gran parte del hidrógeno de su núcleo.
+
+    </p>
+
+    <p>
+
+        Cuando eso ocurra comenzará a expandirse hasta convertirse en una gigante roja. Su tamaño aumentará enormemente y las condiciones del Sistema Solar cambiarán.
+
+    </p>
+
+    <p>
+
+        Después expulsará sus capas externas formando una nebulosa planetaria. Finalmente quedará un núcleo muy caliente llamado enana blanca.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h2>📚 Datos interesantes</h2>
+
+    <ul>
+
+        <li>☀️ El Sol gira aproximadamente cada 25 a 35 días, dependiendo de la latitud.</li>
+
+        <li>☀️ Contiene casi toda la masa del Sistema Solar.</li>
+
+        <li>☀️ Cada segundo transforma millones de toneladas de hidrógeno en helio.</li>
+
+        <li>☀️ Su energía tarda miles de años en salir desde el núcleo hasta la superficie.</li>
+
+        <li>☀️ La luz viaja desde el Sol hasta la Tierra en unos 8 minutos y 20 segundos.</li>
+
+        <li>☀️ Sin el Sol no existiría el ciclo del agua.</li>
+
+        <li>☀️ La fotosíntesis depende de su energía.</li>
+
+        <li>☀️ Es solo una de los cientos de miles de millones de estrellas de la Vía Láctea.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h2>📝 Evaluación del Sol</h2>
+
+    <ol>
+
+        <li>¿Cuál es la misión que más se ha acercado al Sol?</li>
+
+        <li>¿Qué estudia Solar Orbiter?</li>
+
+        <li>¿Qué significa SDO?</li>
+
+        <li>¿Qué ocurrirá cuando el Sol agote gran parte del hidrógeno?</li>
+
+        <li>¿En qué se convertirá después de ser una gigante roja?</li>
+
+        <li>¿Qué es una enana blanca?</li>
+
+        <li>¿Cuánto tarda la luz solar en llegar a la Tierra?</li>
+
+        <li>¿Qué porcentaje aproximado de la masa del Sistema Solar posee el Sol?</li>
+
+        <li>¿Qué proceso produce la energía solar?</li>
+
+        <li>¿Cuál es la temperatura aproximada del núcleo?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Parker Solar Probe\n\
+2. El Sol y el viento solar\n\
+3. Solar Dynamics Observatory\n\
+4. Se expandirá y será una gigante roja\n\
+5. En una enana blanca\n\
+6. El núcleo caliente que queda al final de la vida de una estrella como el Sol\n\
+7. Aproximadamente 8 minutos y 20 segundos\n\
+8. Cerca del 99.8%\n\
+9. La fusión nuclear\n\
+10. Aproximadamente 15 millones °C'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<div class="card">
+
+    <h2>🏆 Reto</h2>
+
+    <p>
+
+        Investiga otra estrella distinta al Sol y escribe:
+
+    </p>
+
+    <ul>
+
+        <li>Su nombre.</li>
+        <li>Su tipo.</li>
+        <li>Su color.</li>
+        <li>Su temperatura.</li>
+        <li>Su tamaño.</li>
+        <li>La distancia aproximada a la Tierra.</li>
+
+    </ul>
+
+</div>
+
+<section id="estrellas">
+
+    <h2>⭐ LAS ESTRELLAS</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Starsinthesky.jpg" alt="Estrellas">
+
+    <div class="card">
+
+        <h2>⭐ ¿Qué es una estrella?</h2>
+
+        <p>
+
+            Una estrella es una enorme esfera de gas muy caliente que produce su propia luz y energía mediante un proceso llamado fusión nuclear. Las estrellas están formadas principalmente por hidrógeno y helio. Gracias a las altísimas temperaturas y presiones en
+            su núcleo, los átomos de hidrógeno se unen para formar helio y liberan enormes cantidades de energía.
+
+        </p>
+
+        <p>
+
+            El Sol es una estrella. Aunque desde la Tierra parece mucho más grande que las demás, esto se debe a que está mucho más cerca de nosotros.
+
+        </p>
+
+        <p>
+
+            En el universo existen cientos de miles de millones de estrellas, y solo en nuestra galaxia, la Vía Láctea, se estima que hay entre 100 000 y 400 000 millones.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🌌 ¿Cómo nacen las estrellas?</h2>
+
+        <p>
+
+            Las estrellas nacen dentro de gigantescas nubes de gas y polvo llamadas nebulosas. Con el paso del tiempo, la gravedad hace que el gas se comprima cada vez más. Cuando la temperatura del centro alcanza millones de grados, comienza la fusión nuclear y
+            nace una nueva estrella.
+
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" alt="Nebulosa">
+
+    </div>
+
+    <div class="card">
+
+        <h2>🌈 Colores de las estrellas</h2>
+
+        <p>
+
+            El color de una estrella depende principalmente de su temperatura.
+
+        </p>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Color</th>
+
+                <th>Temperatura aproximada</th>
+
+                <th>Ejemplo</th>
+
+            </tr>
+
+            <tr>
+
+                <td>🔴 Roja</td>
+
+                <td>3 000 °C</td>
+
+                <td>Betelgeuse</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🟠 Naranja</td>
+
+                <td>4 500 °C</td>
+
+                <td>Arcturus</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🟡 Amarilla</td>
+
+                <td>5 500 °C</td>
+
+                <td>El Sol</td>
+
+            </tr>
+
+            <tr>
+
+                <td>⚪ Blanca</td>
+
+                <td>8 000 °C</td>
+
+                <td>Sirio</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🔵 Azul</td>
+
+                <td>Más de 20 000 °C</td>
+
+                <td>Rigel</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🔥 Composición de una estrella</h2>
+
+        <ul>
+
+            <li>Hidrógeno.</li>
+
+            <li>Helio.</li>
+
+            <li>Carbono.</li>
+
+            <li>Oxígeno.</li>
+
+            <li>Hierro.</li>
+
+            <li>Neón.</li>
+
+            <li>Silicio.</li>
+
+            <li>Otros elementos.</li>
+
+        </ul>
+
+        <p>
+
+            La mayoría de estos elementos se forman durante la vida de las estrellas y, en algunos casos, durante explosiones de supernovas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>⭐ Curiosidades</h2>
+
+        <ul>
+
+            <li>⭐ Algunas estrellas son millones de veces más brillantes que el Sol.</li>
+
+            <li>⭐ Otras son mucho más pequeñas que la Tierra.</li>
+
+            <li>⭐ La estrella más cercana a la Tierra es el Sol.</li>
+
+            <li>⭐ Después del Sol, la estrella más cercana es Próxima Centauri.</li>
+
+            <li>⭐ Muchas estrellas forman sistemas dobles o múltiples.</li>
+
+            <li>⭐ Algunas tienen planetas orbitándolas.</li>
+
+            <li>⭐ Cada noche podemos observar miles de estrellas sin telescopio desde lugares oscuros.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📝 Ejercicios</h2>
+
+        <ol>
+
+            <li>¿Qué es una estrella?</li>
+
+            <li>¿Cómo produce energía?</li>
+
+            <li>¿Dónde nacen las estrellas?</li>
+
+            <li>¿Cuál es la estrella más cercana a la Tierra?</li>
+
+            <li>¿Qué color tienen las estrellas más calientes?</li>
+
+            <li>¿Qué elemento es el más abundante en una estrella?</li>
+
+            <li>¿Qué es una nebulosa?</li>
+
+            <li>¿Qué determina el color de una estrella?</li>
+
+            <li>¿Cuál es un ejemplo de estrella azul?</li>
+
+            <li>¿Cuál es un ejemplo de estrella roja?</li>
+
+        </ol>
+
+        <button onclick="alert('1) Una esfera de gas que produce su propia energía. 2) Mediante fusión nuclear. 3) En nebulosas. 4) El Sol. 5) Azul. 6) Hidrógeno. 7) Una nube de gas y polvo. 8) Su temperatura. 9) Rigel. 10) Betelgeuse.')">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<section id="marte">
+
+    <h2>🔴 MARTE</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Marte">
+
+    <div class="card">
+
+        <h3>¿Qué es Marte?</h3>
+
+        <p>
+
+            Marte es el cuarto planeta del Sistema Solar y es conocido como el
+            <b>Planeta Rojo</b> debido al óxido de hierro presente en su superficie, que le da ese característico color rojizo.
+
+        </p>
+
+        <p>
+
+            Es uno de los planetas más estudiados por las agencias espaciales porque existen evidencias de que en el pasado tuvo ríos, lagos y posiblemente océanos de agua líquida.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>4.º planeta</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro</td>
+                <td>6 779 km</td>
+            </tr>
+
+            <tr>
+                <td>Duración del día</td>
+                <td>24 horas 37 minutos</td>
+            </tr>
+
+            <tr>
+                <td>Duración del año</td>
+                <td>687 días terrestres</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura media</td>
+                <td>-63 °C</td>
+            </tr>
+
+            <tr>
+                <td>Lunas</td>
+                <td>2 (Fobos y Deimos)</td>
+            </tr>
+
+            <tr>
+                <td>Gravedad</td>
+                <td>3.71 m/s²</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🏔️ Superficie</h3>
+
+        <p>
+
+            Marte posee montañas gigantes, cañones inmensos, dunas de arena, cráteres de impacto y antiguos cauces de ríos.
+
+        </p>
+
+        <p>
+
+            En este planeta se encuentra <b>Olympus Mons</b>, el volcán más grande conocido del Sistema Solar, con unos 22 km de altura.
+
+        </p>
+
+        <p>
+
+            También alberga <b>Valles Marineris</b>, un sistema de cañones de unos 4 000 km de longitud.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💧 Agua en Marte</h3>
+
+        <p>
+
+            Aunque actualmente la mayor parte del agua está congelada en los polos y bajo la superficie, existen muchas evidencias geológicas de que hace miles de millones de años hubo agua líquida fluyendo por Marte.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Exploración</h3>
+
+        <ul>
+
+            <li>Viking 1.</li>
+
+            <li>Spirit.</li>
+
+            <li>Opportunity.</li>
+
+            <li>Curiosity.</li>
+
+            <li>Perseverance.</li>
+
+            <li>Ingenuity (helicóptero experimental).</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Curiosidades</h3>
+
+        <ul>
+
+            <li>🔴 Es conocido como el Planeta Rojo.</li>
+            <li>🌪️ Tiene enormes tormentas de polvo.</li>
+            <li>🧊 Posee casquetes polares de hielo.</li>
+            <li>🌋 Tiene el volcán más grande del Sistema Solar.</li>
+            <li>🌄 Su gravedad es aproximadamente el 38 % de la terrestre.</li>
+            <li>🛰️ Es uno de los planetas más explorados por robots.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Por qué Marte es rojo?</li>
+
+            <li>¿Cuántas lunas tiene?</li>
+
+            <li>¿Cómo se llama su volcán más grande?</li>
+
+            <li>¿Qué misión llevó un helicóptero?</li>
+
+            <li>¿Cuánto dura un año marciano?</li>
+
+            <li>¿Cuál es su temperatura media?</li>
+
+            <li>¿Qué evidencias existen sobre el agua?</li>
+
+            <li>¿Cómo se llaman sus dos lunas?</li>
+
+            <li>¿Qué es Valles Marineris?</li>
+
+            <li>¿Por qué Marte interesa tanto a los científicos?</li>
+
+        </ol>
+
+        <button onclick="alert('1) Por el óxido de hierro. 2) Dos. 3) Olympus Mons. 4) Perseverance con Ingenuity. 5) 687 días. 6) Aproximadamente -63 °C. 7) Antiguos ríos y lagos. 8) Fobos y Deimos. 9) Un enorme sistema de cañones. 10) Porque pudo haber tenido condiciones aptas para agua líquida.')">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<section id="jupiter">
+
+    <h2>🪐 JÚPITER</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Júpiter">
+
+    <div class="card">
+
+        <h3>🌍 ¿Qué es Júpiter?</h3>
+
+        <p>
+
+            Júpiter es el quinto planeta del Sistema Solar y el más grande de todos. Su diámetro supera los 139 000 kilómetros, lo que significa que podrían caber más de 1 300 planetas como la Tierra en su interior.
+
+        </p>
+
+        <p>
+
+            Está formado principalmente por hidrógeno y helio, por lo que pertenece al grupo de los gigantes gaseosos. A diferencia de la Tierra, no posee una superficie sólida donde una persona pueda caminar.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>5.º planeta</td>
+            </tr>
+
+            <tr>
+                <td>Diámetro</td>
+                <td>139 820 km</td>
+            </tr>
+
+            <tr>
+                <td>Masa</td>
+                <td>318 veces la de la Tierra</td>
+            </tr>
+
+            <tr>
+                <td>Duración del día</td>
+                <td>9 horas 56 minutos</td>
+            </tr>
+
+            <tr>
+                <td>Duración del año</td>
+                <td>11.86 años terrestres</td>
+            </tr>
+
+            <tr>
+                <td>Temperatura de las nubes</td>
+                <td>≈ -145 °C</td>
+            </tr>
+
+            <tr>
+                <td>Tipo</td>
+                <td>Gigante gaseoso</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌪️ La Gran Mancha Roja</h3>
+
+        <p>
+
+            La Gran Mancha Roja es una gigantesca tormenta que ha sido observada durante siglos. Tiene un tamaño mayor que el diámetro de la Tierra y sus vientos pueden superar los 400 km/h.
+
+        </p>
+
+        <p>
+
+            Los científicos continúan estudiándola para comprender mejor la dinámica de la atmósfera de Júpiter.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>☁️ Atmósfera</h3>
+
+        <p>
+
+            La atmósfera está compuesta principalmente por hidrógeno y helio, además de pequeñas cantidades de metano, amoníaco y vapor de agua.
+
+        </p>
+
+        <p>
+
+            Las coloridas bandas que vemos en las imágenes son enormes corrientes de nubes que se desplazan en direcciones opuestas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🛰️ Lunas de Júpiter</h3>
+
+        <p>
+
+            Júpiter posee decenas de lunas. Entre las más famosas se encuentran las cuatro descubiertas por Galileo Galilei en 1610, conocidas como los satélites galileanos.
+
+        </p>
+
+        <ul>
+
+            <li>🌋 Ío: el cuerpo con mayor actividad volcánica del Sistema Solar.</li>
+
+            <li>🧊 Europa: podría albergar un océano bajo su superficie helada.</li>
+
+            <li>🌍 Ganímedes: la luna más grande del Sistema Solar.</li>
+
+            <li>🌑 Calisto: una de las superficies con más cráteres conocidos.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🧲 Campo magnético</h3>
+
+        <p>
+
+            Júpiter posee el campo magnético más intenso de todos los planetas del Sistema Solar. Este atrapa partículas cargadas y genera poderosas auroras cerca de sus polos.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Exploración espacial</h3>
+
+        <ul>
+
+            <li>Pioneer 10.</li>
+            <li>Pioneer 11.</li>
+            <li>Voyager 1.</li>
+            <li>Voyager 2.</li>
+            <li>Galileo.</li>
+            <li>Juno.</li>
+
+        </ul>
+
+        <p>
+
+            La misión Juno continúa enviando información sobre la estructura interna, la atmósfera y el campo magnético del planeta.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Curiosidades</h3>
+
+        <ul>
+
+            <li>🪐 Es el planeta más grande del Sistema Solar.</li>
+
+            <li>🌪️ Posee tormentas gigantescas.</li>
+
+            <li>⚡ Tiene el campo magnético planetario más fuerte.</li>
+
+            <li>🌕 Ganímedes es la luna más grande del Sistema Solar.</li>
+
+            <li>☁️ No tiene una superficie sólida como la Tierra.</li>
+
+            <li>💨 Sus vientos pueden alcanzar cientos de kilómetros por hora.</li>
+
+            <li>🛰️ Ha sido visitado por numerosas misiones espaciales.</li>
+
+            <li>🌌 Ayuda a desviar algunos cometas y asteroides gracias a su enorme gravedad.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué lugar ocupa Júpiter desde el Sol?</li>
+
+            <li>¿Cuál es su tipo de planeta?</li>
+
+            <li>¿Cómo se llama su tormenta más famosa?</li>
+
+            <li>¿Qué luna podría tener un océano bajo el hielo?</li>
+
+            <li>¿Cuál es la luna más grande del Sistema Solar?</li>
+
+            <li>¿Cuánto dura un día en Júpiter?</li>
+
+            <li>¿Qué misión estudia actualmente el planeta?</li>
+
+            <li>¿Cuál es el principal componente de su atmósfera?</li>
+
+            <li>¿Por qué Júpiter es importante para el Sistema Solar?</li>
+
+            <li>¿Cuántas veces supera aproximadamente la masa de la Tierra?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1) Quinto.\n2) Gigante gaseoso.\n3) La Gran Mancha Roja.\n4) Europa.\n5) Ganímedes.\n6) Aproximadamente 9 h 56 min.\n7) Juno.\n8) Hidrógeno y helio.\n9) Su gran gravedad ayuda a desviar algunos cuerpos pequeños.\n10) Aproximadamente 318 veces.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<section id="saturno">
+
+    <h2>🪐 SATURNO</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturno">
+
+    <div class="card">
+
+        <h3>🪐 ¿Qué es Saturno?</h3>
+
+        <p>
+
+            Saturno es el sexto planeta del Sistema Solar y el segundo más grande después de Júpiter. Es famoso por su impresionante sistema de anillos, visible incluso con pequeños telescopios.
+
+        </p>
+
+        <p>
+
+            Al igual que Júpiter, Saturno es un gigante gaseoso compuesto principalmente por hidrógeno y helio. Su densidad media es tan baja que, si existiera un océano lo suficientemente grande, teóricamente flotaría sobre él.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>6.º planeta</td>
+            </tr>
+            <tr>
+                <td>Diámetro</td>
+                <td>120 536 km</td>
+            </tr>
+            <tr>
+                <td>Masa</td>
+                <td>95 veces la Tierra</td>
+            </tr>
+            <tr>
+                <td>Duración del día</td>
+                <td>10 h 33 min</td>
+            </tr>
+            <tr>
+                <td>Duración del año</td>
+                <td>29.5 años terrestres</td>
+            </tr>
+            <tr>
+                <td>Temperatura media</td>
+                <td>≈ -178 °C</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Gigante gaseoso</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💍 Los Anillos de Saturno</h3>
+
+        <p>
+
+            Los anillos de Saturno son el sistema de anillos más espectacular del Sistema Solar. Están formados por miles de millones de fragmentos de hielo, roca y polvo que orbitan alrededor del planeta.
+
+        </p>
+
+        <p>
+
+            Aunque parecen sólidos desde lejos, están divididos en miles de anillos más pequeños separados por espacios conocidos como divisiones.
+
+        </p>
+
+        <ul>
+
+            <li>Anillo A</li>
+            <li>Anillo B</li>
+            <li>Anillo C</li>
+            <li>Anillo D</li>
+            <li>Anillo E</li>
+            <li>Anillo F</li>
+            <li>Anillo G</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌙 Las lunas de Saturno</h3>
+
+        <p>
+
+            Saturno posee más de un centenar de lunas confirmadas. Algunas de las más importantes son:
+
+        </p>
+
+        <ul>
+
+            <li>🌍 Titán: la segunda luna más grande del Sistema Solar.</li>
+
+            <li>❄️ Encélado: expulsa chorros de agua y hielo desde su interior.</li>
+
+            <li>🌑 Mimas: famosa por su enorme cráter Herschel.</li>
+
+            <li>🛰️ Rea.</li>
+
+            <li>🌕 Dione.</li>
+
+            <li>🪨 Japeto.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌊 Titán</h3>
+
+        <p>
+
+            Titán es una de las lunas más fascinantes del Sistema Solar. Tiene una atmósfera densa y posee ríos, lagos y mares, pero están formados principalmente por metano y etano líquidos en lugar de agua.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>❄️ Encélado</h3>
+
+        <p>
+
+            Encélado es una pequeña luna cubierta de hielo. Las sondas espaciales detectaron enormes géiseres que expulsan agua al espacio. Esto la convierte en uno de los lugares con mayor interés para buscar posibles condiciones favorables para la vida microbiana.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌪️ El hexágono del polo norte</h3>
+
+        <p>
+
+            En el polo norte de Saturno existe una gigantesca tormenta con forma hexagonal. Su estructura ha permanecido estable durante décadas y sigue siendo uno de los fenómenos atmosféricos más curiosos conocidos.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Exploración espacial</h3>
+
+        <ul>
+
+            <li>Pioneer 11.</li>
+            <li>Voyager 1.</li>
+            <li>Voyager 2.</li>
+            <li>Cassini-Huygens.</li>
+
+        </ul>
+
+        <p>
+
+            La misión Cassini estudió Saturno durante más de una década y proporcionó miles de fotografías y datos sobre el planeta, sus anillos y sus lunas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Curiosidades</h3>
+
+        <ul>
+
+            <li>💍 Tiene los anillos más famosos del Sistema Solar.</li>
+
+            <li>🪐 Es el segundo planeta más grande.</li>
+
+            <li>🌍 Titán posee una atmósfera muy densa.</li>
+
+            <li>❄️ Encélado lanza agua al espacio.</li>
+
+            <li>🌪️ Presenta una tormenta con forma hexagonal.</li>
+
+            <li>☁️ Está formado principalmente por hidrógeno y helio.</li>
+
+            <li>🛰️ Cassini revolucionó nuestro conocimiento sobre Saturno.</li>
+
+            <li>🌌 Sus anillos se extienden cientos de miles de kilómetros.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué lugar ocupa Saturno desde el Sol?</li>
+
+            <li>¿Cuál es su característica más conocida?</li>
+
+            <li>¿De qué están formados sus anillos?</li>
+
+            <li>¿Cuál es la luna más grande de Saturno?</li>
+
+            <li>¿Qué luna expulsa géiseres de agua?</li>
+
+            <li>¿Cómo se llama la misión que estudió Saturno durante años?</li>
+
+            <li>¿Qué forma tiene la tormenta del polo norte?</li>
+
+            <li>¿Qué tipo de planeta es Saturno?</li>
+
+            <li>¿Cuánto dura aproximadamente un año en Saturno?</li>
+
+            <li>¿Qué líquidos existen en los lagos de Titán?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1) Sexto.\n2) Sus anillos.\n3) Hielo, roca y polvo.\n4) Titán.\n5) Encélado.\n6) Cassini-Huygens.\n7) Hexagonal.\n8) Gigante gaseoso.\n9) 29.5 años terrestres.\n10) Metano y etano líquidos.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<section id="urano">
+
+    <h2>🩵 URANO</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Urano">
+
+    <div class="card">
+
+        <h3>🪐 ¿Qué es Urano?</h3>
+
+        <p>
+
+            Urano es el séptimo planeta del Sistema Solar y el tercero más grande por diámetro. Fue descubierto en 1781 por William Herschel, siendo el primer planeta encontrado con ayuda de un telescopio.
+
+        </p>
+
+        <p>
+
+            Se clasifica como un <b>gigante de hielo</b>, ya que contiene grandes cantidades de agua, amoníaco y metano en su interior, además de hidrógeno y helio.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>7.º planeta</td>
+            </tr>
+            <tr>
+                <td>Diámetro</td>
+                <td>50 724 km</td>
+            </tr>
+            <tr>
+                <td>Masa</td>
+                <td>14.5 veces la de la Tierra</td>
+            </tr>
+            <tr>
+                <td>Duración del día</td>
+                <td>17 h 14 min</td>
+            </tr>
+            <tr>
+                <td>Duración del año</td>
+                <td>84 años terrestres</td>
+            </tr>
+            <tr>
+                <td>Temperatura media</td>
+                <td>≈ -195 °C</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Gigante de hielo</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🔄 ¿Por qué gira de lado?</h3>
+
+        <p>
+
+            Urano es famoso porque su eje de rotación está inclinado aproximadamente 98°. Esto hace que parezca girar "acostado", una característica única entre los planetas principales.
+
+        </p>
+
+        <p>
+
+            Una de las hipótesis más aceptadas es que, hace miles de millones de años, un gran objeto chocó con Urano y cambió la orientación de su eje.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💙 ¿Por qué es azul verdoso?</h3>
+
+        <p>
+
+            El color azul verdoso de Urano se debe al metano presente en su atmósfera. Este gas absorbe gran parte de la luz roja del Sol y refleja principalmente la luz azul y verde.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💍 Anillos</h3>
+
+        <p>
+
+            Urano posee un sistema de anillos oscuros y delgados. Aunque no son tan vistosos como los de Saturno, están compuestos por partículas de hielo, polvo y roca.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌙 Principales lunas</h3>
+
+        <ul>
+
+            <li>🌕 Titania (la más grande).</li>
+            <li>🌕 Oberón.</li>
+            <li>🌕 Ariel.</li>
+            <li>🌕 Umbriel.</li>
+            <li>🌕 Miranda, conocida por sus enormes acantilados.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌬️ Atmósfera</h3>
+
+        <p>
+
+            La atmósfera está formada principalmente por hidrógeno, helio y metano. También se observan nubes y vientos intensos que pueden alcanzar cientos de kilómetros por hora.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Exploración espacial</h3>
+
+        <p>
+
+            Hasta el momento, la única nave espacial que ha visitado Urano de cerca ha sido <b>Voyager 2</b>, que realizó su sobrevuelo en 1986 y obtuvo fotografías e información muy valiosa sobre el planeta y sus lunas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Curiosidades</h3>
+
+        <ul>
+
+            <li>🩵 Es un gigante de hielo.</li>
+            <li>🔄 Gira prácticamente de lado.</li>
+            <li>💙 Su color se debe al metano.</li>
+            <li>❄️ Es uno de los planetas más fríos del Sistema Solar.</li>
+            <li>💍 Tiene anillos oscuros.</li>
+            <li>🌙 Posee numerosas lunas.</li>
+            <li>🚀 Solo ha sido visitado por Voyager 2.</li>
+            <li>🕒 Un año en Urano dura 84 años terrestres.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué lugar ocupa Urano desde el Sol?</li>
+            <li>¿Qué tipo de planeta es?</li>
+            <li>¿Por qué parece girar de lado?</li>
+            <li>¿Qué gas le da su color azul verdoso?</li>
+            <li>¿Cuál es su luna más grande?</li>
+            <li>¿Qué nave lo visitó?</li>
+            <li>¿Cuánto dura un año en Urano?</li>
+            <li>¿Tiene anillos?</li>
+            <li>¿Cuál es su temperatura media aproximada?</li>
+            <li>¿Qué gases predominan en su atmósfera?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1) Séptimo.\n2) Gigante de hielo.\n3) Por la inclinación de su eje de rotación (≈98°).\n4) Metano.\n5) Titania.\n6) Voyager 2.\n7) 84 años terrestres.\n8) Sí.\n9) Aproximadamente -195 °C.\n10) Hidrógeno, helio y metano.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<section id="neptuno">
+
+    <h2>🔵 NEPTUNO</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptuno">
+
+    <div class="card">
+
+        <h3>🌊 ¿Qué es Neptuno?</h3>
+
+        <p>
+
+            Neptuno es el octavo y más lejano planeta del Sistema Solar. Fue descubierto en 1846 gracias a cálculos matemáticos que predecían su existencia antes de ser observado directamente con un telescopio.
+
+        </p>
+
+        <p>
+
+            Al igual que Urano, pertenece al grupo de los gigantes de hielo. Está compuesto principalmente por hidrógeno, helio y metano, además de agua, amoníaco y otros compuestos en su interior.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Datos generales</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Dato</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td>Posición desde el Sol</td>
+                <td>8.º planeta</td>
+            </tr>
+            <tr>
+                <td>Diámetro</td>
+                <td>49 244 km</td>
+            </tr>
+            <tr>
+                <td>Masa</td>
+                <td>17 veces la de la Tierra</td>
+            </tr>
+            <tr>
+                <td>Duración del día</td>
+                <td>16 horas</td>
+            </tr>
+            <tr>
+                <td>Duración del año</td>
+                <td>164.8 años terrestres</td>
+            </tr>
+            <tr>
+                <td>Temperatura media</td>
+                <td>≈ -200 °C</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Gigante de hielo</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💨 Los vientos más rápidos del Sistema Solar</h3>
+
+        <p>
+
+            Neptuno posee algunos de los vientos más rápidos observados en un planeta, con velocidades que pueden superar los <b>2 000 km/h</b>.
+
+        </p>
+
+        <p>
+
+            Estos vientos impulsan enormes tormentas y hacen que su atmósfera cambie constantemente.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🔵 La Gran Mancha Oscura</h3>
+
+        <p>
+
+            En Neptuno se han observado enormes tormentas oscuras, similares en cierto modo a la Gran Mancha Roja de Júpiter. La más famosa fue llamada
+            <b>Gran Mancha Oscura</b>, detectada por la sonda Voyager 2 en 1989.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌙 Tritón y otras lunas</h3>
+
+        <p>
+
+            Neptuno tiene numerosas lunas. La más grande es <b>Tritón</b>, un mundo helado que gira alrededor del planeta en sentido contrario al de la rotación de Neptuno (órbita retrógrada).
+
+        </p>
+
+        <ul>
+
+            <li>🌕 Tritón.</li>
+            <li>🌕 Nereida.</li>
+            <li>🌕 Proteo.</li>
+            <li>🌕 Larisa.</li>
+            <li>🌕 Despina.</li>
+
+        </ul>
+
+        <p>
+
+            Tritón presenta géiseres de nitrógeno congelado y es uno de los satélites más interesantes del Sistema Solar.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💍 Los anillos de Neptuno</h3>
+
+        <p>
+
+            Neptuno posee un sistema de anillos muy tenues y oscuros, compuesto por partículas de hielo y polvo. Aunque son difíciles de observar desde la Tierra, han sido estudiados por sondas espaciales y telescopios modernos.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Exploración espacial</h3>
+
+        <p>
+
+            La única nave que ha visitado Neptuno de cerca es <b>Voyager 2</b>, que realizó su histórico sobrevuelo en 1989. Gracias a esta misión se obtuvieron las primeras imágenes detalladas del planeta, sus lunas y sus anillos.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Curiosidades</h3>
+
+        <ul>
+
+            <li>🔵 Es el planeta más lejano del Sol.</li>
+            <li>💨 Tiene algunos de los vientos más rápidos del Sistema Solar.</li>
+            <li>🌊 Su color azul está relacionado con la presencia de metano.</li>
+            <li>🌙 Tritón gira en sentido retrógrado.</li>
+            <li>💍 Posee anillos muy delgados.</li>
+            <li>🚀 Solo Voyager 2 lo ha visitado.</li>
+            <li>❄️ Es un mundo extremadamente frío.</li>
+            <li>🪐 Un año neptuniano dura casi 165 años terrestres.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📋 Comparación entre Urano y Neptuno</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Característica</th>
+                <th>Urano</th>
+                <th>Neptuno</th>
+            </tr>
+
+            <tr>
+                <td>Posición</td>
+                <td>7.º</td>
+                <td>8.º</td>
+            </tr>
+
+            <tr>
+                <td>Tipo</td>
+                <td>Gigante de hielo</td>
+                <td>Gigante de hielo</td>
+            </tr>
+
+            <tr>
+                <td>Color</td>
+                <td>Azul verdoso</td>
+                <td>Azul intenso</td>
+            </tr>
+
+            <tr>
+                <td>Año</td>
+                <td>84 años terrestres</td>
+                <td>164.8 años terrestres</td>
+            </tr>
+
+            <tr>
+                <td>Vientos</td>
+                <td>Muy fuertes</td>
+                <td>Hasta más de 2 000 km/h</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué lugar ocupa Neptuno desde el Sol?</li>
+            <li>¿Qué tipo de planeta es?</li>
+            <li>¿Cuál es su luna más grande?</li>
+            <li>¿Qué misión lo visitó?</li>
+            <li>¿Cómo se llama su gran tormenta?</li>
+            <li>¿Qué velocidad pueden alcanzar sus vientos?</li>
+            <li>¿Cuánto dura un año en Neptuno?</li>
+            <li>¿Por qué es azul?</li>
+            <li>¿Tiene anillos?</li>
+            <li>¿Qué característica especial tiene la órbita de Tritón?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1) Octavo.\n2) Gigante de hielo.\n3) Tritón.\n4) Voyager 2.\n5) Gran Mancha Oscura.\n6) Más de 2 000 km/h.\n7) 164.8 años terrestres.\n8) Por el metano en su atmósfera.\n9) Sí.\n10) Es una órbita retrógrada.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<section id="asteroides" class="card">
+
+    <h2>☄️ Asteroides</h2>
+
+    <img src="c:\Users\MINEDUCYT\Downloads\asteroide.webp" width="100%" alt="Asteroides">
+
+    <p>
+
+        Los <strong>asteroides</strong> son cuerpos rocosos que orbitan alrededor del Sol. La mayoría se encuentra en el <strong>Cinturón de Asteroides</strong>, ubicado entre las órbitas de Marte y Júpiter. Son restos de la formación del Sistema Solar,
+        ocurrida hace aproximadamente 4,600 millones de años.
+
+    </p>
+
+    <h3>📚 Información General</h3>
+
+    <ul>
+
+        <li><strong>Tipo:</strong> Cuerpo menor del Sistema Solar.</li>
+
+        <li><strong>Composición:</strong> Roca, metales y algunos compuestos ricos en carbono.</li>
+
+        <li><strong>Ubicación principal:</strong> Cinturón de Asteroides.</li>
+
+        <li><strong>Cantidad conocida:</strong> Más de 1.3 millones de asteroides.</li>
+
+        <li><strong>Tamaño:</strong> Desde pocos metros hasta casi 1,000 km.</li>
+
+    </ul>
+
+    <h3>🌍 Asteroides Famosos</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Nombre</th>
+
+            <th>Diámetro</th>
+
+            <th>Dato curioso</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Ceres</td>
+
+            <td>940 km</td>
+
+            <td>Es un planeta enano y el objeto más grande del cinturón.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Vesta</td>
+
+            <td>525 km</td>
+
+            <td>Es uno de los objetos más brillantes del cinturón.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pallas</td>
+
+            <td>512 km</td>
+
+            <td>Fue descubierto en 1802.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Hygiea</td>
+
+            <td>430 km</td>
+
+            <td>Podría reunir las características de un planeta enano.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Ida</td>
+
+            <td>31 km</td>
+
+            <td>Fue el primer asteroide al que se le descubrió una luna.</td>
+
+        </tr>
+
+    </table>
+
+    <h3>🚀 Curiosidades</h3>
+
+    <ul>
+
+        <li>☄️ Algunos asteroides tienen lunas.</li>
+
+        <li>🛰️ Varias sondas espaciales los han visitado.</li>
+
+        <li>🌍 Algunos cruzan la órbita de la Tierra.</li>
+
+        <li>💎 Algunos contienen grandes cantidades de metales.</li>
+
+        <li>🪨 Son considerados fósiles del nacimiento del Sistema Solar.</li>
+
+    </ul>
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Qué son los asteroides?</li>
+
+        <li>¿Dónde se encuentra el cinturón principal?</li>
+
+        <li>¿Cuál es el asteroide más grande?</li>
+
+        <li>¿Qué planeta enano pertenece al cinturón?</li>
+
+        <li>¿De qué están formados?</li>
+
+        <li>¿Hace cuánto se formaron aproximadamente?</li>
+
+        <li>¿Qué asteroide tiene una luna llamada Dáctilo?</li>
+
+        <li>¿Todos los asteroides están entre Marte y Júpiter?</li>
+
+        <li>¿Por qué son importantes para los científicos?</li>
+
+        <li>¿Qué contienen algunos asteroides?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Son cuerpos rocosos que orbitan el Sol.\
+\n2. Entre Marte y Júpiter.\
+\n3. Ceres.\
+\n4. Ceres.\
+\n5. Roca, metal y carbono.\
+\n6. Hace unos 4,600 millones de años.\
+\n7. Ida.\
+\n8. No, algunos cruzan otras órbitas.\
+\n9. Porque conservan información del origen del Sistema Solar.\
+\n10. Grandes cantidades de metales.'
+)">
+Ver respuestas
+</button>
+
+</section>
+
+<section id="estrellas">
+
+    <h2>⭐ LAS ESTRELLAS</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hubble_ultra_deep_field.jpg" alt="Estrellas">
+
+    <div class="card">
+
+        <h3>🌟 ¿Qué es una estrella?</h3>
+
+        <p>
+
+            Las estrellas son enormes esferas de plasma mantenidas unidas por su propia gravedad. En su núcleo ocurre la fusión nuclear, donde el hidrógeno se transforma en helio y libera cantidades gigantescas de energía en forma de luz y calor.
+
+        </p>
+
+        <p>
+
+            Son los objetos más comunes de las galaxias y pueden vivir desde millones hasta billones de años, dependiendo de su masa.
+
+        </p>
+
+        <p>
+
+            El Sol es una estrella de tamaño medio conocida como una estrella de secuencia principal de tipo G.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🔥 ¿Cómo nacen las estrellas?</h3>
+
+        <p>
+
+            Las estrellas nacen dentro de enormes nubes de gas y polvo llamadas nebulosas. Cuando la gravedad comprime estas nubes, la temperatura aumenta hasta millones de grados. Cuando comienza la fusión nuclear, nace una nueva estrella.
+
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" alt="Nebulosa de Orión">
+
+    </div>
+
+    <div class="card">
+
+        <h3>⚛️ Composición</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Elemento</th>
+
+                <th>Porcentaje aproximado</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Hidrógeno</td>
+
+                <td>≈74%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Helio</td>
+
+                <td>≈24%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Otros elementos</td>
+
+                <td>≈2%</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌈 Color de las estrellas</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Color</th>
+
+                <th>Temperatura</th>
+
+                <th>Ejemplo</th>
+
+            </tr>
+
+            <tr>
+
+                <td>🔴 Roja</td>
+
+                <td>3 000 °C</td>
+
+                <td>Betelgeuse</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🟠 Naranja</td>
+
+                <td>4 500 °C</td>
+
+                <td>Arcturus</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🟡 Amarilla</td>
+
+                <td>5 500 °C</td>
+
+                <td>Sol</td>
+
+            </tr>
+
+            <tr>
+
+                <td>⚪ Blanca</td>
+
+                <td>8 000 °C</td>
+
+                <td>Sirio</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🔵 Azul</td>
+
+                <td>Más de 20 000 °C</td>
+
+                <td>Rigel</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📏 Tamaños de las estrellas</h3>
+
+        <ul>
+
+            <li>⭐ Enanas rojas.</li>
+
+            <li>⭐ Enanas amarillas.</li>
+
+            <li>⭐ Gigantes rojas.</li>
+
+            <li>⭐ Supergigantes.</li>
+
+            <li>⭐ Hipergigantes.</li>
+
+            <li>⭐ Enanas blancas.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌌 Datos sorprendentes</h3>
+
+        <ul>
+
+            <li>🌟 En la Vía Láctea existen entre 100 000 y 400 000 millones de estrellas.</li>
+
+            <li>🌟 El Sol contiene el 99.8% de la masa del Sistema Solar.</li>
+
+            <li>🌟 Algunas estrellas son cientos de veces más grandes que el Sol.</li>
+
+            <li>🌟 Otras son mucho más pequeñas que la Tierra.</li>
+
+            <li>🌟 Las estrellas producen casi todos los elementos químicos pesados del universo.</li>
+
+            <li>🌟 Algunas viven miles de millones de años.</li>
+
+            <li>🌟 Las estrellas más masivas viven menos tiempo porque consumen su combustible rápidamente.</li>
+
+            <li>🌟 Muchas estrellas poseen sistemas planetarios.</li>
+
+            <li>🌟 Existen estrellas dobles, triples e incluso sistemas con más estrellas.</li>
+
+            <li>🌟 La estrella más cercana a la Tierra, después del Sol, es Próxima Centauri.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué es una estrella?</li>
+
+            <li>¿Cómo produce energía?</li>
+
+            <li>¿Dónde nacen las estrellas?</li>
+
+            <li>¿Cuál es el elemento más abundante?</li>
+
+            <li>¿Cuál es la estrella más cercana a la Tierra?</li>
+
+            <li>¿Qué determina el color de una estrella?</li>
+
+            <li>¿Qué es una nebulosa?</li>
+
+            <li>¿Cuál es una estrella azul conocida?</li>
+
+            <li>¿Qué tipo de estrella es el Sol?</li>
+
+            <li>¿Por qué las estrellas muy grandes viven menos tiempo?</li>
+
+        </ol>
+
+        <button onclick="alert('1. Una esfera de plasma. 2. Por fusión nuclear. 3. En nebulosas. 4. Hidrógeno. 5. El Sol. 6. Su temperatura. 7. Una nube de gas y polvo. 8. Rigel. 9. Enana amarilla de secuencia principal. 10. Porque consumen su combustible más rápidamente.')">
+
+Ver respuestas
+
+</button>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PARTE 8.2 - TIPOS DE ESTRELLAS -->
+<!-- ===================================================== -->
+
+<div class="card">
+
+    <h3>⭐ Clasificación de las estrellas</h3>
+
+    <p>
+
+        Las estrellas pueden clasificarse según su masa, temperatura, color, tamaño, luminosidad y etapa de evolución. No todas las estrellas son iguales. Algunas son pequeñas y frías, mientras que otras son tan enormes que podrían contener millones de planetas
+        como la Tierra.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🔴 Enanas Rojas</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Proxima_Centauri_by_ESO.jpg" alt="Próxima Centauri">
+
+    <p>
+
+        Las enanas rojas son las estrellas más abundantes del universo. Son pequeñas, relativamente frías y consumen su combustible muy lentamente, por lo que pueden vivir durante billones de años.
+
+    </p>
+
+    <ul>
+
+        <li>Temperatura: 2 500–4 000 °C.</li>
+
+        <li>Color: rojo.</li>
+
+        <li>Tamaño: pequeño.</li>
+
+        <li>Ejemplo: Próxima Centauri.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>🟡 Enanas Amarillas</h3>
+
+    <p>
+
+        Las enanas amarillas son estrellas de tamaño medio. El Sol pertenece a esta categoría. Permanecen estables durante miles de millones de años gracias a la fusión del hidrógeno.
+
+    </p>
+
+    <ul>
+
+        <li>Temperatura: 5 000–6 000 °C.</li>
+
+        <li>Vida aproximada: unos 10 mil millones de años.</li>
+
+        <li>Ejemplo: Sol.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>🟠 Gigantes Rojas</h3>
+
+    <p>
+
+        Cuando una estrella parecida al Sol consume gran parte del hidrógeno de su núcleo, comienza a expandirse y se transforma en una gigante roja. Durante esta etapa aumenta enormemente su tamaño y cambia su color.
+
+    </p>
+
+    <ul>
+
+        <li>Muy grandes.</li>
+
+        <li>Color rojizo.</li>
+
+        <li>Temperatura superficial menor que la del Sol.</li>
+
+        <li>Ejemplo: Betelgeuse (actualmente es una supergigante roja, pero sirve para ilustrar el color característico).</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>🔵 Gigantes Azules</h3>
+
+    <p>
+
+        Las gigantes azules son extremadamente calientes y muy luminosas. Consumen su combustible rápidamente y viven mucho menos tiempo que las estrellas pequeñas.
+
+    </p>
+
+    <ul>
+
+        <li>Temperatura: superior a 20 000 °C.</li>
+
+        <li>Muy brillantes.</li>
+
+        <li>Gran masa.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>⭐ Supergigantes</h3>
+
+    <p>
+
+        Las supergigantes son algunas de las estrellas más enormes conocidas. Pueden tener radios cientos de veces mayores que el del Sol y suelen terminar su vida en explosiones llamadas supernovas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌟 Hipergigantes</h3>
+
+    <p>
+
+        Las hipergigantes son aún más masivas y luminosas que las supergigantes. Son muy raras y expulsan grandes cantidades de materia al espacio mediante intensos vientos estelares.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>⚪ Enanas Blancas</h3>
+
+    <p>
+
+        Una enana blanca es el núcleo que queda después de que una estrella como el Sol termina su evolución. Aunque ya no produce energía mediante fusión nuclear, permanece muy caliente y se enfría lentamente durante miles de millones de años.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌈 Clasificación espectral</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Clase</th>
+
+            <th>Color</th>
+
+            <th>Temperatura</th>
+
+        </tr>
+
+        <tr>
+
+            <td>O</td>
+
+            <td>Azul</td>
+
+            <td>>30 000 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>B</td>
+
+            <td>Azul blanca</td>
+
+            <td>10 000–30 000 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>A</td>
+
+            <td>Blanca</td>
+
+            <td>7 500–10 000 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>F</td>
+
+            <td>Blanco amarilla</td>
+
+            <td>6 000–7 500 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>G</td>
+
+            <td>Amarilla</td>
+
+            <td>5 200–6 000 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>K</td>
+
+            <td>Naranja</td>
+
+            <td>3 700–5 200 °C</td>
+
+        </tr>
+
+        <tr>
+
+            <td>M</td>
+
+            <td>Roja</td>
+
+            <td>
+                <3 700 °C</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>📊 Comparación</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Tipo</th>
+
+            <th>Tamaño</th>
+
+            <th>Vida</th>
+
+            <th>Temperatura</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Enana Roja</td>
+
+            <td>Pequeña</td>
+
+            <td>Billones de años</td>
+
+            <td>Baja</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Enana Amarilla</td>
+
+            <td>Media</td>
+
+            <td>Miles de millones de años</td>
+
+            <td>Media</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Gigante Roja</td>
+
+            <td>Muy grande</td>
+
+            <td>Corta</td>
+
+            <td>Media</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Supergigante</td>
+
+            <td>Enorme</td>
+
+            <td>Muy corta</td>
+
+            <td>Muy alta</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Hipergigante</td>
+
+            <td>Gigantesca</td>
+
+            <td>Muy corta</td>
+
+            <td>Extrema</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Cuál es el tipo de estrella más abundante del universo?</li>
+
+        <li>¿Qué tipo de estrella es el Sol?</li>
+
+        <li>¿Qué queda después de que una estrella como el Sol termina su evolución?</li>
+
+        <li>¿Qué estrellas viven más tiempo?</li>
+
+        <li>¿Qué clase espectral corresponde al Sol?</li>
+
+        <li>¿Cuál es la clase espectral más caliente?</li>
+
+        <li>¿Qué tipo de estrella puede terminar como supernova?</li>
+
+        <li>¿Qué color tienen las estrellas más frías?</li>
+
+        <li>¿Qué significa que una estrella sea una hipergigante?</li>
+
+        <li>¿Qué determina principalmente el color de una estrella?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Enanas rojas.\
+\n2. Enana amarilla (tipo G).\
+\n3. Una enana blanca.\
+\n4. Las enanas rojas.\
+\n5. Clase G.\
+\n6. Clase O.\
+\n7. Las supergigantes más masivas.\
+\n8. Rojas.\
+\n9. Que es extremadamente masiva y luminosa.\
+\n10. Su temperatura superficial.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- PARTE 8.3 - EL CICLO DE VIDA DE LAS ESTRELLAS -->
+<!-- ===================================================== -->
+
+<div class="card">
+
+    <h3>🌟 El ciclo de vida de una estrella</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Stellar_evolution.svg" alt="Ciclo de vida de las estrellas">
+
+    <p>
+
+        Las estrellas no viven para siempre. Al igual que los seres vivos, nacen, evolucionan y finalmente llegan al final de su existencia. Sin embargo, estos procesos ocurren durante millones o incluso miles de millones de años.
+
+    </p>
+
+    <p>
+
+        La evolución de una estrella depende principalmente de su masa. Las estrellas pequeñas y medianas tienen un destino muy diferente al de las estrellas extremadamente masivas.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>☁️ 1. Nebulosa</h3>
+
+    <p>
+
+        Todo comienza en una nebulosa, una enorme nube de gas y polvo. La gravedad hace que parte de ese material se concentre en una región cada vez más densa.
+
+    </p>
+
+    <p>
+
+        Cuando la temperatura del centro aumenta lo suficiente, comienza la fusión nuclear y nace una nueva estrella.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>⭐ 2. Protoestrella</h3>
+
+    <p>
+
+        Antes de convertirse en una estrella verdadera, el objeto pasa por una etapa llamada <b>protoestrella</b>. En esta fase todavía está acumulando materia y calentándose.
+
+    </p>
+
+    <ul>
+
+        <li>Se forma dentro de la nebulosa.</li>
+        <li>Aún no produce energía mediante fusión nuclear.</li>
+        <li>Puede estar rodeada por un disco de gas y polvo.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>☀️ 3. Secuencia Principal</h3>
+
+    <p>
+
+        Esta es la etapa más larga de la vida de una estrella. Durante millones o miles de millones de años convierte hidrógeno en helio mediante fusión nuclear. El Sol se encuentra actualmente en esta fase.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🔴 4. Gigante Roja</h3>
+
+    <p>
+
+        Cuando una estrella parecida al Sol agota gran parte del hidrógeno de su núcleo, comienza a expandirse y se convierte en una gigante roja. Su tamaño aumenta enormemente mientras cambian su brillo y temperatura.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>⚪ 5. Enana Blanca</h3>
+
+    <p>
+
+        Después de expulsar sus capas externas, queda el núcleo de la estrella, llamado enana blanca. Aunque ya no produce energía por fusión, permanece muy caliente y se enfría lentamente durante muchísimo tiempo.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>💥 Supernovas</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Crab_Nebula.jpg" alt="Supernova">
+
+    <p>
+
+        Las estrellas muy masivas no terminan como enanas blancas. Cuando agotan su combustible, su núcleo colapsa y se produce una enorme explosión conocida como <b>supernova</b>.
+
+    </p>
+
+    <p>
+
+        Durante una supernova se liberan enormes cantidades de energía y se dispersan elementos químicos al espacio, que luego pueden formar nuevas estrellas, planetas y otros objetos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🟣 Estrellas de neutrones</h3>
+
+    <p>
+
+        Si el núcleo que queda tras una supernova tiene una masa adecuada, se convierte en una estrella de neutrones.
+
+    </p>
+
+    <ul>
+
+        <li>Son extremadamente densas.</li>
+        <li>Una pequeña cantidad de su materia tendría una masa enorme en la Tierra.</li>
+        <li>Pueden girar muy rápidamente.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>📡 Púlsares</h3>
+
+    <p>
+
+        Algunas estrellas de neutrones emiten haces de radiación desde sus polos. Cuando esos haces apuntan hacia la Tierra durante su rotación, parecen emitir pulsos regulares, por lo que reciben el nombre de
+        <b>púlsares</b>.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>⚫ Agujeros negros</h3>
+
+    <p>
+
+        Las estrellas más masivas pueden colapsar al final de su vida y formar un agujero negro. Su gravedad es tan intensa que ni siquiera la luz puede escapar una vez que cruza una región llamada horizonte de sucesos.
+
+    </p>
+
+    <p>
+
+        Los agujeros negros continúan siendo objeto de intensa investigación y son fundamentales para comprender la evolución del universo.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📊 Resumen del ciclo</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Etapa</th>
+            <th>Descripción</th>
+        </tr>
+
+        <tr>
+            <td>Nebulosa</td>
+            <td>Nube de gas y polvo donde nacen las estrellas.</td>
+        </tr>
+
+        <tr>
+            <td>Protoestrella</td>
+            <td>Objeto en formación.</td>
+        </tr>
+
+        <tr>
+            <td>Secuencia Principal</td>
+            <td>Fusión de hidrógeno en helio.</td>
+        </tr>
+
+        <tr>
+            <td>Gigante Roja</td>
+            <td>La estrella se expande.</td>
+        </tr>
+
+        <tr>
+            <td>Enana Blanca</td>
+            <td>Núcleo restante de estrellas como el Sol.</td>
+        </tr>
+
+        <tr>
+            <td>Supernova</td>
+            <td>Explosión de estrellas masivas.</td>
+        </tr>
+
+        <tr>
+            <td>Estrella de neutrones</td>
+            <td>Posible remanente tras una supernova.</td>
+        </tr>
+
+        <tr>
+            <td>Agujero negro</td>
+            <td>Posible destino de las estrellas más masivas.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Dónde nacen las estrellas?</li>
+
+        <li>¿Qué es una protoestrella?</li>
+
+        <li>¿En qué etapa se encuentra el Sol?</li>
+
+        <li>¿Qué ocurre cuando una estrella como el Sol agota gran parte de su hidrógeno?</li>
+
+        <li>¿Qué queda después de una gigante roja como el Sol?</li>
+
+        <li>¿Qué es una supernova?</li>
+
+        <li>¿Qué objeto puede quedar tras una supernova?</li>
+
+        <li>¿Qué es un púlsar?</li>
+
+        <li>¿Qué caracteriza a un agujero negro?</li>
+
+        <li>¿Cuál es la etapa más larga en la vida de una estrella?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. En nebulosas.\
+\n2. Una estrella en formación.\
+\n3. Secuencia principal.\
+\n4. Se convierte en gigante roja.\
+\n5. Una enana blanca.\
+\n6. La explosión de una estrella masiva.\
+\n7. Una estrella de neutrones o un agujero negro.\
+\n8. Una estrella de neutrones que emite pulsos de radiación.\
+\n9. Su gravedad es tan intensa que la luz no puede escapar.\
+\n10. La secuencia principal.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- PARTE 9.1 - GALAXIAS -->
+<!-- ================================================= -->
+
+<section id="galaxias">
+
+    <h2>🌌 LAS GALAXIAS</h2>
+
+    <img src="c:\Users\MINEDUCYT\Downloads\Via lactea.jpg" alt="Galaxia Vía Láctea">
+
+    <div class="card">
+
+        <h3>🌌 ¿Qué es una galaxia?</h3>
+
+        <p>
+
+            Una galaxia es un enorme conjunto de estrellas, planetas, nebulosas, gas, polvo cósmico, materia oscura y otros objetos unidos por la gravedad. Cada galaxia puede contener desde millones hasta cientos de billones de estrellas.
+
+        </p>
+
+        <p>
+
+            Nuestro Sistema Solar pertenece a la galaxia llamada <b>Vía Láctea</b>, la cual alberga cientos de miles de millones de estrellas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌠 ¿Cómo se forman las galaxias?</h3>
+
+        <p>
+
+            Las galaxias comenzaron a formarse poco después del nacimiento del universo. Con el paso de millones de años, enormes nubes de gas fueron atraídas por la gravedad hasta crear las primeras galaxias.
+
+        </p>
+
+        <p>
+
+            Actualmente las galaxias siguen evolucionando, creciendo e incluso fusionándose con otras galaxias.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Tipos de galaxias</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Tipo</th>
+
+                <th>Forma</th>
+
+                <th>Ejemplo</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Espiral</td>
+
+                <td>Brazos en espiral</td>
+
+                <td>Vía Láctea</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Elíptica</td>
+
+                <td>Ovalada</td>
+
+                <td>M87</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Lenticular</td>
+
+                <td>Disco sin brazos</td>
+
+                <td>NGC 2787</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Irregular</td>
+
+                <td>Sin forma definida</td>
+
+                <td>Gran Nube de Magallanes</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌌 La Vía Láctea</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Milky_Way_Arch.jpg" alt="Vía Láctea">
+
+        <p>
+
+            La Vía Láctea es una galaxia espiral barrada con un diámetro aproximado de 100 000 años luz. En ella se encuentra nuestro Sistema Solar, situado en uno de sus brazos espirales conocido como el Brazo de Orión.
+
+        </p>
+
+        <ul>
+
+            <li>🌟 Contiene cientos de miles de millones de estrellas.</li>
+
+            <li>🌍 Alberga nuestro Sistema Solar.</li>
+
+            <li>⚫ En su centro existe un agujero negro supermasivo llamado Sagittarius A*.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <p>
+
+            Andrómeda es la galaxia grande más cercana a la Vía Láctea. Tiene un diámetro mayor y contiene aproximadamente un billón de estrellas. Los astrónomos estiman que dentro de unos 4 500 millones de años la Vía Láctea y Andrómeda comenzarán un proceso de
+            fusión.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>⭐ Datos interesantes</h3>
+
+        <ul>
+
+            <li>🌌 Existen cientos de miles de millones de galaxias observables.</li>
+
+            <li>⭐ Cada galaxia contiene enormes cantidades de estrellas.</li>
+
+            <li>⚫ Muchas galaxias poseen un agujero negro supermasivo en su centro.</li>
+
+            <li>🌠 Algunas galaxias siguen formando nuevas estrellas.</li>
+
+            <li>🌌 Otras ya casi no producen estrellas nuevas.</li>
+
+            <li>🛰️ El telescopio espacial James Webb estudia galaxias muy lejanas.</li>
+
+            <li>🔭 El telescopio Hubble revolucionó nuestro conocimiento sobre ellas.</li>
+
+            <li>💫 Las galaxias pueden chocar y fusionarse lentamente.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📋 Comparación</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Característica</th>
+
+                <th>Vía Láctea</th>
+
+                <th>Andrómeda</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Tipo</td>
+
+                <td>Espiral barrada</td>
+
+                <td>Espiral</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Diámetro aproximado</td>
+
+                <td>100 000 años luz</td>
+
+                <td>220 000 años luz</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sistema Solar</td>
+
+                <td>Sí</td>
+
+                <td>No</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Estrellas</td>
+
+                <td>Cientos de miles de millones</td>
+
+                <td>Aproximadamente un billón</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué es una galaxia?</li>
+
+            <li>¿Cómo se llama nuestra galaxia?</li>
+
+            <li>¿Qué tipo de galaxia es la Vía Láctea?</li>
+
+            <li>¿Cuál es la galaxia grande más cercana?</li>
+
+            <li>¿Qué hay en el centro de la Vía Láctea?</li>
+
+            <li>¿Qué telescopio estudia galaxias muy lejanas?</li>
+
+            <li>¿Qué forma tiene una galaxia elíptica?</li>
+
+            <li>¿Qué galaxia contiene nuestro Sistema Solar?</li>
+
+            <li>¿Qué puede ocurrir cuando dos galaxias se acercan?</li>
+
+            <li>¿Cómo se llama el brazo donde está el Sistema Solar?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1. Un enorme conjunto de estrellas y otros objetos unidos por gravedad.\
+\n2. La Vía Láctea.\
+\n3. Espiral barrada.\
+\n4. Andrómeda.\
+\n5. El agujero negro supermasivo Sagittarius A*.\
+\n6. James Webb.\
+\n7. Ovalada.\
+\n8. La Vía Láctea.\
+\n9. Pueden fusionarse lentamente.\
+\n10. Brazo de Orión.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PARTE 9.2 - GALAXIAS AVANZADAS -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h3>🌌 Estructura de una galaxia espiral</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ESO_-_The_Great_Orion_Nebula.jpg" alt="Nebulosa de Orión" width="300">
+
+    <p>
+
+        Las galaxias espirales poseen varias partes importantes:
+
+    </p>
+
+    <ul>
+
+        <li>⭐ Núcleo galáctico.</li>
+        <li>⚫ Agujero negro supermasivo.</li>
+        <li>🌌 Disco galáctico.</li>
+        <li>🌠 Brazos espirales.</li>
+        <li>☁️ Nubes de gas y polvo.</li>
+        <li>🌟 Cúmulos estelares.</li>
+        <li>🛰️ Halo galáctico.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>🔭 Galaxias famosas</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Galaxia</th>
+
+            <th>Tipo</th>
+
+            <th>Dato interesante</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Vía Láctea</td>
+
+            <td>Espiral barrada</td>
+
+            <td>Nuestra galaxia.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Andrómeda</td>
+
+            <td>Espiral</td>
+
+            <td>La galaxia grande más cercana.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Galaxia del Triángulo</td>
+
+            <td>Espiral</td>
+
+            <td>Tercera más grande del Grupo Local.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Gran Nube de Magallanes</td>
+
+            <td>Irregular</td>
+
+            <td>Galaxia satélite de la Vía Láctea.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pequeña Nube de Magallanes</td>
+
+            <td>Irregular</td>
+
+            <td>Visible desde el hemisferio sur.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>M87</td>
+
+            <td>Elíptica</td>
+
+            <td>Contiene un enorme agujero negro.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Sombrero (M104)</td>
+
+            <td>Espiral</td>
+
+            <td>Famosa por su brillante núcleo.</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Remolino (M51)</td>
+
+            <td>Espiral</td>
+
+            <td>Presenta brazos muy definidos.</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>🌠 Cúmulos de galaxias</h3>
+
+    <p>
+
+        Las galaxias rara vez están completamente aisladas. La gravedad hace que se agrupen formando cúmulos de galaxias, que pueden contener desde decenas hasta miles de galaxias.
+
+    </p>
+
+    <p>
+
+        Varios cúmulos pueden formar estructuras aún mayores llamadas
+        <b>supercúmulos</b>.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📏 Distancias en el universo</h3>
+
+    <p>
+
+        Las distancias entre galaxias son tan enormes que se utiliza la unidad
+        <b>año luz</b>, que representa la distancia que recorre la luz en un año.
+
+    </p>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Unidad</th>
+
+            <th>Equivalencia</th>
+
+        </tr>
+
+        <tr>
+
+            <td>1 Año luz</td>
+
+            <td>≈ 9.46 billones de kilómetros</td>
+
+        </tr>
+
+        <tr>
+
+            <td>1 Pársec</td>
+
+            <td>≈ 3.26 años luz</td>
+
+        </tr>
+
+        <tr>
+
+            <td>1 Kilopársec</td>
+
+            <td>1000 pársecs</td>
+
+        </tr>
+
+        <tr>
+
+            <td>1 Megapársec</td>
+
+            <td>1 millón de pársecs</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>🌑 Materia oscura</h3>
+
+    <p>
+
+        Los astrónomos han descubierto que la materia visible representa solo una pequeña parte del universo. Existe una forma de materia que no emite ni refleja luz y cuya presencia se deduce por sus efectos gravitacionales. A esta se le llama
+        <b>materia oscura</b>.
+
+    </p>
+
+    <p>
+
+        Aunque aún no se conoce exactamente de qué está compuesta, parece ser fundamental para explicar cómo se mantienen unidas muchas galaxias.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌌 Energía oscura</h3>
+
+    <p>
+
+        Las observaciones indican que la expansión del universo se está acelerando. Una de las explicaciones propuestas es la existencia de una forma de energía llamada <b>energía oscura</b>, cuyo origen todavía es objeto de investigación.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌟 Curiosidades</h3>
+
+    <ul>
+
+        <li>🌌 El universo observable contiene cientos de miles de millones de galaxias.</li>
+
+        <li>⭐ Cada galaxia puede albergar miles de millones de sistemas planetarios.</li>
+
+        <li>⚫ Muchas galaxias tienen agujeros negros supermasivos en su centro.</li>
+
+        <li>🌠 Las galaxias pueden chocar y fusionarse sin que la mayoría de sus estrellas colisionen entre sí.</li>
+
+        <li>🔭 Los telescopios espaciales permiten observar galaxias extremadamente lejanas.</li>
+
+        <li>📡 La luz de algunas galaxias ha tardado miles de millones de años en llegar hasta nosotros.</li>
+
+        <li>💫 Estudiar las galaxias ayuda a comprender la evolución del universo.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Evaluación</h3>
+
+    <ol>
+
+        <li>¿Qué es un cúmulo de galaxias?</li>
+
+        <li>¿Qué es un supercúmulo?</li>
+
+        <li>¿Qué unidad se utiliza para medir grandes distancias en astronomía?</li>
+
+        <li>¿Cuánto mide aproximadamente un año luz?</li>
+
+        <li>¿Qué es la materia oscura?</li>
+
+        <li>¿Qué es la energía oscura?</li>
+
+        <li>¿Cuál es la galaxia más cercana de gran tamaño a la Vía Láctea?</li>
+
+        <li>¿Qué galaxia contiene el famoso agujero negro fotografiado en 2019?</li>
+
+        <li>¿Qué parte de una galaxia espiral contiene normalmente un agujero negro supermasivo?</li>
+
+        <li>¿Por qué son importantes las galaxias para estudiar el universo?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Un grupo de galaxias unidas por gravedad.\
+\n2. Un conjunto de varios cúmulos de galaxias.\
+\n3. El año luz (y también el pársec en astronomía).\
+\n4. Aproximadamente 9.46 billones de kilómetros.\
+\n5. Una forma de materia detectada por sus efectos gravitacionales.\
+\n6. Una posible explicación de la aceleración de la expansión del universo.\
+\n7. Andrómeda.\
+\n8. M87.\
+\n9. El núcleo galáctico.\
+\n10. Porque permiten comprender la estructura y evolución del universo.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<section id="andromeda" class="card">
+
+    <h2>🌌 Galaxia de Andrómeda (M31)</h2>
+
+
+
+    <p>
+
+        La <strong>Galaxia de Andrómeda</strong>, también conocida como <strong>Messier 31 (M31)</strong>, es la galaxia espiral más grande del Grupo Local y la galaxia importante más cercana a la Vía Láctea.
+
+    </p>
+
+    <h3>📚 Información General</h3>
+
+    <ul>
+
+        <li><strong>Nombre:</strong> Galaxia de Andrómeda</li>
+
+        <li><strong>Catálogo:</strong> Messier 31 (M31)</li>
+
+        <li><strong>Tipo:</strong> Galaxia espiral</li>
+
+        <li><strong>Constelación:</strong> Andrómeda</li>
+
+        <li><strong>Distancia:</strong> Aproximadamente 2.5 millones de años luz</li>
+
+        <li><strong>Diámetro:</strong> Cerca de 220 000 años luz</li>
+
+        <li><strong>Número de estrellas:</strong> Alrededor de 1 billón</li>
+
+        <li><strong>Edad:</strong> Más de 10 mil millones de años</li>
+
+    </ul>
+
+    <h3>🌟 Características</h3>
+
+    <p>
+
+        Andrómeda es la galaxia más grande del Grupo Local y contiene muchísimas más estrellas que la Vía Láctea. Posee un enorme agujero negro supermasivo en su centro y está rodeada por numerosas galaxias satélite.
+
+    </p>
+
+    <p>
+
+        Puede observarse a simple vista desde lugares con cielos oscuros como una pequeña mancha difusa.
+
+    </p>
+
+    <h3>🚀 El futuro</h3>
+
+    <p>
+
+        Los astrónomos han determinado que Andrómeda y la Vía Láctea se están acercando entre sí a unos <strong>110 kilómetros por segundo</strong>. Dentro de aproximadamente <strong>4 a 5 mil millones de años</strong>, ambas galaxias comenzarán a fusionarse
+        formando una galaxia mucho más grande.
+
+    </p>
+
+    <h3>📊 Datos Curiosos</h3>
+
+    <ul>
+
+        <li>🌌 Es el objeto más lejano visible a simple vista.</li>
+
+        <li>⭐ Contiene alrededor de un billón de estrellas.</li>
+
+        <li>🛰️ Tiene más de 30 galaxias satélite conocidas.</li>
+
+        <li>🕳️ Posee un agujero negro supermasivo en su centro.</li>
+
+        <li>🔭 Fue estudiada en detalle por el telescopio Hubble.</li>
+
+        <li>🌠 Es uno de los objetos favoritos para la astrofotografía.</li>
+
+    </ul>
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Qué nombre de catálogo recibe la Galaxia de Andrómeda?</li>
+
+        <li>¿A qué distancia está aproximadamente?</li>
+
+        <li>¿Qué tipo de galaxia es?</li>
+
+        <li>¿En qué constelación se encuentra?</li>
+
+        <li>¿Cuántas estrellas contiene aproximadamente?</li>
+
+        <li>¿Qué galaxia chocará con Andrómeda en el futuro?</li>
+
+        <li>¿Puede observarse a simple vista?</li>
+
+        <li>¿Qué telescopio la estudió con gran detalle?</li>
+
+        <li>¿Qué existe en el centro de Andrómeda?</li>
+
+        <li>¿Cómo podría llamarse la galaxia resultante de la fusión?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Messier 31 (M31).\n\
+2. Aproximadamente 2.5 millones de años luz.\n\
+3. Galaxia espiral.\n\
+4. Constelación de Andrómeda.\n\
+5. Cerca de un billón de estrellas.\n\
+6. La Vía Láctea.\n\
+7. Sí, desde lugares con cielos muy oscuros.\n\
+8. El telescopio espacial Hubble.\n\
+9. Un agujero negro supermasivo.\n\
+10. Los astrónomos aún no han definido un nombre oficial.'
+)">
+Ver respuestas
+</button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- GALAXIA DE ANDRÓMEDA -->
+<!-- ================================================= -->
+
+<section id="andromeda" class="card">
+
+    <h2>🌌 Galaxia de Andrómeda (M31)</h2>
+
+    <center>
+
+
+
+    </center>
+
+    <h3>📖 ¿Qué es la Galaxia de Andrómeda?</h3>
+
+    <p>
+
+        La <strong>Galaxia de Andrómeda</strong>, también conocida como
+        <strong>Messier 31 (M31)</strong>, es la galaxia espiral más grande del Grupo Local y la galaxia importante más cercana a la Vía Láctea. Se encuentra aproximadamente a <strong>2.54 millones de años luz</strong> de la Tierra y contiene cerca de
+        <strong>un billón de estrellas</strong>. Desde lugares con cielos muy oscuros puede observarse a simple vista como una pequeña nube difusa.
+
+    </p>
+
+    <h3>📊 Información General</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Dato</th>
+            <th>Información</th>
+        </tr>
+
+        <tr>
+            <td>Nombre</td>
+            <td>Galaxia de Andrómeda</td>
+        </tr>
+
+        <tr>
+            <td>Catálogo</td>
+            <td>Messier 31 (M31)</td>
+        </tr>
+
+        <tr>
+            <td>Tipo</td>
+            <td>Galaxia Espiral</td>
+        </tr>
+
+        <tr>
+            <td>Constelación</td>
+            <td>Andrómeda</td>
+        </tr>
+
+        <tr>
+            <td>Distancia</td>
+            <td>2.54 millones de años luz</td>
+        </tr>
+
+        <tr>
+            <td>Diámetro</td>
+            <td>220 000 años luz</td>
+        </tr>
+
+        <tr>
+            <td>Número de estrellas</td>
+            <td>Aproximadamente 1 billón</td>
+        </tr>
+
+        <tr>
+            <td>Edad</td>
+            <td>Más de 10 mil millones de años</td>
+        </tr>
+
+        <tr>
+            <td>Agujero negro central</td>
+            <td>Sí</td>
+        </tr>
+
+    </table>
+
+    <h3>⭐ Características</h3>
+
+    <ul>
+
+        <li>🌌 Es la galaxia espiral más grande del Grupo Local.</li>
+
+        <li>⭐ Tiene aproximadamente un billón de estrellas.</li>
+
+        <li>🪐 Contiene cientos de miles de millones de planetas.</li>
+
+        <li>🕳️ Posee un agujero negro supermasivo en su centro.</li>
+
+        <li>🛰️ Está rodeada por numerosas galaxias satélite.</li>
+
+        <li>🔭 Puede verse sin telescopio desde lugares con muy poca contaminación lumínica.</li>
+
+    </ul>
+
+    <h3>🚀 El futuro de Andrómeda</h3>
+
+    <p>
+
+        La Galaxia de Andrómeda se está acercando a la Vía Láctea a una velocidad aproximada de <strong>110 kilómetros por segundo</strong>. Los científicos estiman que dentro de aproximadamente
+        <strong>4 500 millones de años</strong> ambas galaxias comenzarán una gigantesca colisión que terminará formando una nueva galaxia de gran tamaño.
+
+    </p>
+
+    <h3>🌟 Curiosidades</h3>
+
+    <ul>
+
+        <li>🌠 Es el objeto más lejano visible a simple vista.</li>
+
+        <li>📸 Ha sido fotografiada por el telescopio espacial Hubble.</li>
+
+        <li>🌌 Tiene más de 30 galaxias satélite conocidas.</li>
+
+        <li>⭐ Es uno de los objetos favoritos para la astrofotografía.</li>
+
+        <li>📚 Forma parte del famoso catálogo Messier.</li>
+
+    </ul>
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Cuál es el nombre de catálogo de Andrómeda?</li>
+
+        <li>¿A qué distancia está?</li>
+
+        <li>¿Qué tipo de galaxia es?</li>
+
+        <li>¿Cuántas estrellas contiene aproximadamente?</li>
+
+        <li>¿Puede verse sin telescopio?</li>
+
+        <li>¿Qué galaxia chocará con ella?</li>
+
+        <li>¿Qué existe en su centro?</li>
+
+        <li>¿Cuál es su diámetro aproximado?</li>
+
+        <li>¿Cómo se llama la constelación donde se encuentra?</li>
+
+        <li>¿Dentro de cuántos millones de años chocará con la Vía Láctea?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Messier 31 (M31).\n\
+2. Aproximadamente 2.54 millones de años luz.\n\
+3. Galaxia espiral.\n\
+4. Cerca de un billón.\n\
+5. Sí.\n\
+6. La Vía Láctea.\n\
+7. Un agujero negro supermasivo.\n\
+8. Aproximadamente 220 000 años luz.\n\
+9. Andrómeda.\n\
+10. En unos 4 500 millones de años.'
+)">
+Ver respuestas
+</button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PARTE 10.1 - AGUJEROS NEGROS -->
+<!-- ================================================= -->
+
+<section id="agujeros">
+
+    <h2>🕳️ Agujeros Negros</h2>
+
+</section>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg" alt="Agujero Negro M87">
+
+<div class="card">
+
+    <h3>⚫ ¿Qué es un agujero negro?</h3>
+
+    <p>
+
+        Un agujero negro es una región del espacio donde la gravedad es tan intensa que nada puede escapar una vez que cruza un límite llamado horizonte de sucesos. Ni siquiera la luz puede salir de esa región.
+
+    </p>
+
+    <p>
+
+        Los agujeros negros no son "aspiradoras cósmicas". Los objetos solo caen en ellos si pasan lo suficientemente cerca o si ya están orbitándolos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>⭐ ¿Cómo se forman?</h3>
+
+    <p>
+
+        Muchos agujeros negros se forman cuando una estrella muy masiva agota su combustible nuclear. Su núcleo colapsa por la gravedad y, si conserva suficiente masa, puede originar un agujero negro.
+
+    </p>
+
+    <p>
+
+        También existen agujeros negros supermasivos en el centro de la mayoría de las galaxias. Su origen todavía se investiga y probablemente involucra el crecimiento durante miles de millones de años.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌌 Partes principales</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Parte</th>
+            <th>Descripción</th>
+        </tr>
+
+        <tr>
+            <td>Horizonte de sucesos</td>
+            <td>Límite a partir del cual no puede escapar la luz.</td>
+        </tr>
+
+        <tr>
+            <td>Disco de acreción</td>
+            <td>Gas y polvo muy calientes que giran alrededor del agujero negro.</td>
+        </tr>
+
+        <tr>
+            <td>Singularidad</td>
+            <td>Región central descrita por la relatividad general donde la densidad sería extremadamente alta. Su naturaleza exacta aún no se comprende por completo.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>🕳️ Tipos de agujeros negros</h3>
+
+    <ul>
+
+        <li>⚫ Estelares: se forman por el colapso de estrellas masivas.</li>
+
+        <li>🌌 De masa intermedia: menos comunes y aún objeto de estudio.</li>
+
+        <li>🌠 Supermasivos: se encuentran en el centro de muchas galaxias.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>📸 La primera imagen</h3>
+
+    <p>
+
+        En 2019, el proyecto Event Horizon Telescope presentó la primera imagen de la sombra de un agujero negro, correspondiente al objeto supermasivo del centro de la galaxia M87.
+
+    </p>
+
+    <p>
+
+        En 2022, el mismo proyecto publicó la primera imagen del agujero negro supermasivo Sagittarius A*, situado en el centro de la Vía Láctea.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌟 Datos interesantes</h3>
+
+    <ul>
+
+        <li>⚫ No emiten luz por sí mismos.</li>
+
+        <li>🌌 Se detectan por sus efectos sobre estrellas, gas y luz cercanos.</li>
+
+        <li>⭐ Algunos tienen masas de millones o miles de millones de veces la del Sol.</li>
+
+        <li>📡 El Event Horizon Telescope combina observatorios de todo el mundo para obtener imágenes.</li>
+
+        <li>🛰️ La materia que cae puede calentarse a millones de grados antes de cruzar el horizonte de sucesos.</li>
+
+        <li>🌠 Los agujeros negros desempeñan un papel importante en la evolución de las galaxias.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>📋 Comparación de tipos</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+
+            <th>Tipo</th>
+
+            <th>Origen</th>
+
+            <th>Masa aproximada</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Estelar</td>
+
+            <td>Colapso de una estrella masiva</td>
+
+            <td>Varias veces la masa del Sol</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Intermedio</td>
+
+            <td>Aún en investigación</td>
+
+            <td>Cientos a cientos de miles de masas solares</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Supermasivo</td>
+
+            <td>Crecimiento durante la evolución de las galaxias</td>
+
+            <td>Millones o miles de millones de masas solares</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Qué es un agujero negro?</li>
+
+        <li>¿Qué es el horizonte de sucesos?</li>
+
+        <li>¿Cómo puede formarse un agujero negro estelar?</li>
+
+        <li>¿Qué es un disco de acreción?</li>
+
+        <li>¿Qué es la singularidad según la relatividad general?</li>
+
+        <li>¿Qué proyecto obtuvo la primera imagen de un agujero negro?</li>
+
+        <li>¿Qué galaxia aparece en la primera imagen publicada en 2019?</li>
+
+        <li>¿Dónde se encuentra Sagittarius A*?</li>
+
+        <li>¿Qué tipos principales de agujeros negros existen?</li>
+
+        <li>¿Los agujeros negros atraen todo el universo? Explica por qué no.</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Una región del espacio con gravedad extremadamente intensa.\
+\n2. El límite desde donde no puede escapar la luz.\
+\n3. Por el colapso de una estrella muy masiva.\
+\n4. Gas y polvo calientes que orbitan el agujero negro.\
+\n5. La región central descrita por la relatividad general.\
+\n6. Event Horizon Telescope.\
+\n7. M87.\
+\n8. En el centro de la Vía Láctea.\
+\n9. Estelares, intermedios y supermasivos.\
+\n10. No. Solo ejercen gravedad intensa cerca de ellos, igual que otros objetos masivos.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PARTE 10.2 - AGUJEROS NEGROS AVANZADOS -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h3>🌀 El horizonte de sucesos</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Black_hole_lensing_web.gif" alt="Horizonte de sucesos">
+
+    <p>
+
+        El horizonte de sucesos es la frontera que rodea a un agujero negro. Si un objeto cruza este límite, ya no puede regresar según la física conocida. Desde el exterior, parece que el tiempo transcurre cada vez más lentamente para un objeto que se acerca
+        al horizonte, un efecto predicho por la teoría de la relatividad general.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🕳️ La singularidad</h3>
+
+    <p>
+
+        La relatividad general predice que, en el centro de un agujero negro, la materia podría concentrarse en una región llamada singularidad, donde las ecuaciones actuales dejan de describir adecuadamente la física. Los científicos consideran que será necesaria
+        una teoría de gravedad cuántica para comprender qué ocurre realmente allí.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌪️ Agujeros negros con rotación</h3>
+
+    <p>
+
+        Muchos agujeros negros giran sobre sí mismos. Estos se conocen como
+        <b>agujeros negros de Kerr</b>. Su rotación puede arrastrar el propio espacio-tiempo a su alrededor, un fenómeno conocido como <b>arrastre de referencia</b> (frame dragging).
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>💥 Colisión de agujeros negros</h3>
+
+    <p>
+
+        Cuando dos agujeros negros orbitan entre sí, pierden energía mediante ondas gravitacionales y poco a poco se acercan hasta fusionarse en un único agujero negro de mayor masa.
+
+    </p>
+
+    <p>
+
+        Estas fusiones producen enormes cantidades de energía en forma de ondas gravitacionales que pueden detectarse desde la Tierra con instrumentos especializados.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📡 Ondas gravitacionales</h3>
+
+    <p>
+
+        Las ondas gravitacionales son pequeñas deformaciones del espacio-tiempo predichas por Albert Einstein en 1916. En 2015 fueron detectadas directamente por primera vez, confirmando una de las predicciones más importantes de la relatividad general.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>☀️ Radiación de Hawking</h3>
+
+    <p>
+
+        El físico Stephen Hawking propuso que los agujeros negros podrían emitir una débil radiación debido a efectos cuánticos cerca del horizonte de sucesos. Este fenómeno, conocido como <b>radiación de Hawking</b>, implicaría que los agujeros negros
+        podrían perder masa muy lentamente con el paso de un tiempo extremadamente largo. Hasta ahora, esta radiación no ha sido observada directamente.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📊 Comparación de tamaños</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Tipo</th>
+            <th>Masa aproximada</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td>Estelar</td>
+            <td>5–100 masas solares</td>
+            <td>Cygnus X-1</td>
+        </tr>
+
+        <tr>
+            <td>Intermedio</td>
+            <td>100–100 000 masas solares</td>
+            <td>Candidatos en cúmulos estelares</td>
+        </tr>
+
+        <tr>
+            <td>Supermasivo</td>
+            <td>Millones o miles de millones de masas solares</td>
+            <td>Sagittarius A*, M87*</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>🌟 Curiosidades</h3>
+
+    <ul>
+
+        <li>⚫ Los agujeros negros pueden deformar la trayectoria de la luz mediante lentes gravitacionales.</li>
+
+        <li>🌌 No todos tienen el mismo tamaño ni la misma masa.</li>
+
+        <li>📡 Las ondas gravitacionales permiten estudiar eventos invisibles para los telescopios tradicionales.</li>
+
+        <li>🧠 Aún existen muchas preguntas sin resolver sobre su interior.</li>
+
+        <li>🚀 Son uno de los campos más activos de la investigación astronómica moderna.</li>
+
+    </ul>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Qué ocurre al cruzar el horizonte de sucesos?</li>
+
+        <li>¿Qué describe la singularidad?</li>
+
+        <li>¿Cómo se llaman los agujeros negros que giran?</li>
+
+        <li>¿Qué fenómeno produce la fusión de dos agujeros negros?</li>
+
+        <li>¿Quién predijo las ondas gravitacionales?</li>
+
+        <li>¿En qué año se detectaron por primera vez?</li>
+
+        <li>¿Qué propone la radiación de Hawking?</li>
+
+        <li>¿Se ha observado directamente la radiación de Hawking?</li>
+
+        <li>¿Qué es el arrastre de referencia?</li>
+
+        <li>¿Por qué siguen siendo un misterio los agujeros negros?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. No puede regresar según la física conocida.\
+\n2. Una región donde nuestras teorías actuales dejan de describir completamente la física.\
+\n3. Agujeros negros de Kerr.\
+\n4. Ondas gravitacionales.\
+\n5. Albert Einstein.\
+\n6. En 2015.\
+\n7. Que los agujeros negros podrían emitir una débil radiación cuántica.\
+\n8. No.\
+\n9. El efecto por el que la rotación del agujero negro arrastra el espacio-tiempo cercano.\
+\n10. Porque aún faltan respuestas sobre su interior y sobre cómo unificar la gravedad con la mecánica cuántica.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- PARTE 11.1 - NEBULOSAS -->
+<!-- ================================================= -->
+
+<section id="nebulosas">
+
+    <h2>☁️ LAS NEBULOSAS</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ESO_-_The_Great_Orion_Nebula.jpg" alt="Nebulosa de Orión">
+
+    <div class="card">
+
+        <h3>☁️ ¿Qué es una nebulosa?</h3>
+
+        <p>
+
+            Una nebulosa es una gigantesca nube formada por gas, polvo cósmico, plasma y diversos elementos químicos distribuidos en el espacio. Las nebulosas pueden medir desde algunos años luz hasta cientos de años luz de diámetro.
+
+        </p>
+
+        <p>
+
+            Muchas de ellas son verdaderas fábricas de estrellas, mientras que otras son los restos de explosiones de supernovas ocurridas hace miles de años.
+
+        </p>
+
+        <p>
+
+            Su estudio permite comprender cómo nacen, evolucionan y mueren las estrellas.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🧪 Composición</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Elemento</th>
+
+                <th>Presencia aproximada</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Hidrógeno</td>
+
+                <td>Muy abundante</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Helio</td>
+
+                <td>Muy abundante</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Oxígeno</td>
+
+                <td>Moderado</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Carbono</td>
+
+                <td>Moderado</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Silicio</td>
+
+                <td>Bajo</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Hierro</td>
+
+                <td>Bajo</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>⭐ Tipos de nebulosas</h3>
+
+        <ul>
+
+            <li>🌟 Nebulosas de emisión.</li>
+
+            <li>🌌 Nebulosas de reflexión.</li>
+
+            <li>⚫ Nebulosas oscuras.</li>
+
+            <li>💥 Remanentes de supernova.</li>
+
+            <li>💀 Nebulosas planetarias.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌟 Nebulosas de emisión</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Lagoon_Nebula.jpg">
+
+        <p>
+
+            Brillan porque el gas es calentado por estrellas muy calientes cercanas. Generalmente presentan tonos rojizos debido al hidrógeno ionizado.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💙 Nebulosas de reflexión</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Witch_Head_Nebula.jpg">
+
+        <p>
+
+            No producen luz propia. Simplemente reflejan la luz de estrellas cercanas mediante pequeñas partículas de polvo.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>⚫ Nebulosas oscuras</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Horsehead-Hubble.jpg">
+
+        <p>
+
+            Son enormes nubes de polvo tan densas que bloquean la luz procedente de las estrellas situadas detrás de ellas.
+
+        </p>
+
+        <p>
+
+            La famosa Nebulosa Cabeza de Caballo pertenece a esta categoría.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💥 Remanentes de Supernova</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Crab_Nebula.jpg">
+
+        <p>
+
+            Cuando una estrella muy masiva explota como supernova, expulsa enormes cantidades de gas al espacio. Ese material forma un remanente de supernova.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💀 Nebulosas Planetarias</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Ring_Nebula.jpg">
+
+        <p>
+
+            A pesar de su nombre, no tienen relación con los planetas. Se forman cuando una estrella parecida al Sol expulsa sus capas externas durante las últimas etapas de su evolución.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌌 Nebulosas más famosas</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Nombre</th>
+
+                <th>Constelación</th>
+
+                <th>Tipo</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Orión (M42)</td>
+
+                <td>Orión</td>
+
+                <td>Emisión</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cabeza de Caballo</td>
+
+                <td>Orión</td>
+
+                <td>Oscura</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Laguna</td>
+
+                <td>Sagitario</td>
+
+                <td>Emisión</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Anillo (M57)</td>
+
+                <td>Lira</td>
+
+                <td>Planetaria</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cangrejo (M1)</td>
+
+                <td>Tauro</td>
+
+                <td>Remanente</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Hélice</td>
+
+                <td>Acuario</td>
+
+                <td>Planetaria</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Águila (M16)</td>
+
+                <td>Serpens</td>
+
+                <td>Emisión</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Roseta</td>
+
+                <td>Monoceros</td>
+
+                <td>Emisión</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🚀 Curiosidades</h3>
+
+        <ul>
+
+            <li>☁️ Algunas nebulosas tienen más de 300 años luz de diámetro.</li>
+
+            <li>⭐ En muchas nacen miles de estrellas.</li>
+
+            <li>🌌 Son visibles gracias a telescopios espaciales y terrestres.</li>
+
+            <li>📸 El telescopio James Webb ha fotografiado nebulosas con un detalle sin precedentes.</li>
+
+            <li>🔭 El telescopio Hubble también ha obtenido imágenes icónicas de nebulosas.</li>
+
+            <li>🧪 Contienen elementos que más tarde pueden formar nuevas estrellas y planetas.</li>
+
+            <li>💫 Algunas existen desde hace millones de años.</li>
+
+            <li>🌠 Son fundamentales para comprender la evolución estelar.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué es una nebulosa?</li>
+
+            <li>¿Cuál es el elemento más abundante?</li>
+
+            <li>¿Qué tipo de nebulosa refleja luz?</li>
+
+            <li>¿Cuál bloquea la luz?</li>
+
+            <li>¿Qué nebulosa pertenece a los remanentes de supernova?</li>
+
+            <li>¿Cuál es una nebulosa planetaria famosa?</li>
+
+            <li>¿Dónde nacen muchas estrellas?</li>
+
+            <li>¿Qué telescopio obtuvo imágenes muy detalladas recientemente?</li>
+
+            <li>¿Las nebulosas planetarias contienen planetas?</li>
+
+            <li>¿Por qué son importantes para la astronomía?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1. Una enorme nube de gas y polvo.\
+\n2. Hidrógeno.\
+\n3. La nebulosa de reflexión.\
+\n4. La nebulosa oscura.\
+\n5. La Nebulosa del Cangrejo (M1).\
+\n6. La Nebulosa del Anillo (M57).\
+\n7. En muchas nebulosas de emisión.\
+\n8. El telescopio espacial James Webb.\
+\n9. No. El nombre es histórico.\
+\n10. Porque ayudan a comprender el nacimiento y la evolución de las estrellas.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PARTE 12.1 - EL UNIVERSO -->
+<!-- ================================================= -->
+
+<section id="universo">
+
+    <h2>🌌 EL UNIVERSO</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/CMB_Timeline300_no_WMAP.jpg" alt="Historia del Universo">
+
+    <div class="card">
+
+        <h3>🌠 ¿Qué es el Universo?</h3>
+
+        <p>
+
+            El universo es la totalidad del espacio, el tiempo, la materia, la energía y todas las leyes físicas conocidas. Incluye galaxias, estrellas, planetas, nebulosas, agujeros negros, cometas, asteroides, radiación y todo lo que existe.
+
+        </p>
+
+        <p>
+
+            Los científicos estiman que el universo observable tiene un diámetro de aproximadamente <b>93 mil millones de años luz</b>. Sin embargo, el universo completo podría ser mucho más grande, e incluso infinito; esa es una cuestión que aún no tiene
+            una respuesta definitiva.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>💥 La teoría del Big Bang</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Universe_expansion.png" alt="Expansión del Universo">
+
+        <p>
+
+            La teoría del Big Bang explica que el universo comenzó hace unos
+            <b>13.8 mil millones de años</b> a partir de un estado extremadamente caliente y denso. No fue una explosión dentro del espacio, sino una rápida expansión del propio espacio.
+
+        </p>
+
+        <p>
+
+            A medida que el universo se expandía, se enfrió. Esto permitió la formación de partículas, átomos, estrellas, galaxias y, mucho tiempo después, sistemas planetarios como el nuestro.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>⏳ Línea del tiempo del Universo</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Momento</th>
+                <th>Evento</th>
+            </tr>
+
+            <tr>
+                <td>Hace 13.8 mil millones de años</td>
+                <td>Inicio de la expansión del universo (Big Bang).</td>
+            </tr>
+
+            <tr>
+                <td>Primeros minutos</td>
+                <td>Se forman los núcleos de los elementos más ligeros.</td>
+            </tr>
+
+            <tr>
+                <td>380 000 años</td>
+                <td>Se forman los primeros átomos y la luz puede viajar libremente.</td>
+            </tr>
+
+            <tr>
+                <td>100–400 millones de años</td>
+                <td>Aparecen las primeras estrellas.</td>
+            </tr>
+
+            <tr>
+                <td>Más tarde</td>
+                <td>Se forman las primeras galaxias.</td>
+            </tr>
+
+            <tr>
+                <td>Hace 4.6 mil millones de años</td>
+                <td>Se forma el Sistema Solar.</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📡 La expansión del Universo</h3>
+
+        <p>
+
+            Las observaciones muestran que las galaxias lejanas se alejan unas de otras. Esto indica que el universo continúa expandiéndose.
+
+        </p>
+
+        <p>
+
+            Cuanto más lejos está una galaxia, mayor suele ser la velocidad con la que se aleja debido a la expansión del espacio.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌡️ El Fondo Cósmico de Microondas</h3>
+
+        <p>
+
+            El fondo cósmico de microondas es una débil radiación que llena todo el universo. Es un "eco" del universo primitivo y constituye una de las evidencias más importantes que apoyan la teoría del Big Bang.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Composición aproximada del Universo</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Componente</th>
+                <th>Porcentaje aproximado</th>
+            </tr>
+
+            <tr>
+                <td>Energía oscura</td>
+                <td>68%</td>
+            </tr>
+
+            <tr>
+                <td>Materia oscura</td>
+                <td>27%</td>
+            </tr>
+
+            <tr>
+                <td>Materia ordinaria</td>
+                <td>5%</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>✨ Curiosidades</h3>
+
+        <ul>
+
+            <li>🌌 El universo sigue expandiéndose.</li>
+            <li>⭐ Contiene cientos de miles de millones de galaxias observables.</li>
+            <li>🔭 La luz de algunos objetos ha viajado durante miles de millones de años para llegar a la Tierra.</li>
+            <li>🌍 Nuestro Sistema Solar ocupa una región muy pequeña dentro de la Vía Láctea.</li>
+            <li>🧪 Aún quedan muchas preguntas sin resolver sobre el origen y el destino final del universo.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué es el universo?</li>
+            <li>¿Hace cuánto comenzó el Big Bang?</li>
+            <li>¿Qué describe la teoría del Big Bang?</li>
+            <li>¿Qué evidencia importante apoya esta teoría?</li>
+            <li>¿Qué porcentaje aproximado del universo corresponde a la materia ordinaria?</li>
+            <li>¿Qué ocurrió unos 380 000 años después del Big Bang?</li>
+            <li>¿El universo sigue expandiéndose?</li>
+            <li>¿Qué componente representa la mayor parte del universo?</li>
+            <li>¿Cuándo se formó el Sistema Solar?</li>
+            <li>¿Qué estudia la cosmología?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1. Todo lo que existe.\
+\n2. Hace unos 13.8 mil millones de años.\
+\n3. El origen y la expansión temprana del universo.\
+\n4. El fondo cósmico de microondas, entre otras observaciones.\
+\n5. Aproximadamente el 5%.\
+\n6. Se formaron los primeros átomos y la luz pudo viajar libremente.\
+\n7. Sí.\
+\n8. La energía oscura.\
+\n9. Hace unos 4.6 mil millones de años.\
+\n10. El origen, evolución y estructura del universo.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- PARTE 12.2 - EL DESTINO DEL UNIVERSO -->
+<!-- ================================================= -->
+
+<div class="card">
+
+    <h3>🔭 ¿Cuál podría ser el destino del Universo?</h3>
+
+    <p>
+
+        Los científicos todavía no saben con certeza cómo terminará el universo. Existen varios modelos basados en observaciones y en las leyes de la física. La respuesta depende de cómo evolucione la expansión cósmica y de la naturaleza de la energía oscura.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>❄️ Big Freeze (Gran Congelamiento)</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Hubble_ultra_deep_field.jpg" alt="Universo profundo">
+
+    <p>
+
+        Es el escenario que actualmente se considera más compatible con muchas observaciones. Si la expansión continúa durante billones de años, las galaxias estarán cada vez más separadas, dejarán de formarse nuevas estrellas y el universo será progresivamente
+        más frío y oscuro.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>💥 Big Crunch (Gran Colapso)</h3>
+
+    <p>
+
+        Este modelo propone que la expansión podría detenerse y revertirse. En ese caso, toda la materia comenzaría a acercarse hasta alcanzar un estado extremadamente denso.
+
+    </p>
+
+    <p>
+
+        Con los datos actuales, este escenario parece menos probable que el Gran Congelamiento, aunque sigue siendo estudiado en algunos modelos teóricos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>💨 Big Rip (Gran Desgarro)</h3>
+
+    <p>
+
+        Si la expansión del universo se acelerara de una forma extrema, llegaría un momento en que galaxias, estrellas, planetas e incluso estructuras más pequeñas podrían dejar de permanecer unidas.
+
+    </p>
+
+    <p>
+
+        Por ahora no existe evidencia de que este escenario vaya a ocurrir, pero es una posibilidad contemplada en algunos modelos cosmológicos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🔄 Big Bounce (Gran Rebote)</h3>
+
+    <p>
+
+        Algunas teorías plantean que el universo podría pasar por ciclos de expansión y contracción. Después de una fase muy densa, comenzaría una nueva expansión.
+
+    </p>
+
+    <p>
+
+        Actualmente esta idea permanece como una hipótesis y aún no ha sido confirmada.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🕸️ La Red Cósmica</h3>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Observable_Universe_with_Measurements_01.png" alt="Estructura del universo">
+
+    <p>
+
+        Las galaxias no están distribuidas al azar. Se organizan formando una enorme red de filamentos conectados entre sí, con enormes regiones casi vacías llamadas vacíos cósmicos.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌌 Vacíos Cósmicos</h3>
+
+    <p>
+
+        Los vacíos cósmicos son inmensas regiones del universo donde existen muy pocas galaxias. Algunos tienen diámetros de cientos de millones de años luz.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>🌠 Supercúmulos de galaxias</h3>
+
+    <p>
+
+        Los cúmulos de galaxias también se agrupan formando supercúmulos. La Vía Láctea pertenece al <b>Supercúmulo de Laniakea</b>, una estructura que contiene aproximadamente 100 000 galaxias.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📈 La expansión acelerada</h3>
+
+    <p>
+
+        Las observaciones de supernovas lejanas indican que la expansión del universo no solo continúa, sino que además parece acelerarse. Una de las explicaciones propuestas es la existencia de la energía oscura.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📏 La constante de Hubble</h3>
+
+    <p>
+
+        La constante de Hubble describe la relación entre la distancia de una galaxia y la velocidad con la que parece alejarse debido a la expansión del universo. Medir este valor con gran precisión es uno de los principales desafíos de la cosmología actual.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>📊 Comparación de escenarios</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Modelo</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td>Big Freeze</td>
+            <td>Expansión continua y enfriamiento progresivo.</td>
+            <td>El más compatible con muchas observaciones actuales.</td>
+        </tr>
+
+        <tr>
+            <td>Big Crunch</td>
+            <td>La expansión se invierte.</td>
+            <td>Hipótesis.</td>
+        </tr>
+
+        <tr>
+            <td>Big Rip</td>
+            <td>La expansión extrema separaría estructuras.</td>
+            <td>Hipótesis.</td>
+        </tr>
+
+        <tr>
+            <td>Big Bounce</td>
+            <td>Ciclos de expansión y contracción.</td>
+            <td>Hipótesis.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="card">
+
+    <h3>📝 Ejercicios</h3>
+
+    <ol>
+
+        <li>¿Qué escenario se considera actualmente el más compatible con muchas observaciones?</li>
+
+        <li>¿Qué propone el Big Crunch?</li>
+
+        <li>¿Qué describe el Big Rip?</li>
+
+        <li>¿Qué es el Big Bounce?</li>
+
+        <li>¿Qué son los vacíos cósmicos?</li>
+
+        <li>¿Qué estructura conecta a las galaxias a gran escala?</li>
+
+        <li>¿A qué supercúmulo pertenece la Vía Láctea?</li>
+
+        <li>¿Qué explica la constante de Hubble?</li>
+
+        <li>¿Qué podría estar relacionada con la expansión acelerada del universo?</li>
+
+        <li>¿Se conoce con certeza el destino final del universo?</li>
+
+    </ol>
+
+    <button onclick="alert(
+'1. Big Freeze.\
+\n2. Que el universo dejaría de expandirse y comenzaría a contraerse.\
+\n3. Una expansión extrema que separaría estructuras.\
+\n4. Un modelo cíclico de expansión y contracción.\
+\n5. Regiones con muy pocas galaxias.\
+\n6. La red cósmica.\
+\n7. Laniakea.\
+\n8. Relaciona la distancia con la velocidad de alejamiento de las galaxias.\
+\n9. La energía oscura.\
+\n10. No, sigue siendo una cuestión abierta en la cosmología.'
+)">
+Ver respuestas
+</button>
+
+</div>
+
+<!-- ================================================= -->
+<!-- PARTE 13.1 - EXOPLANETAS -->
+<!-- ================================================= -->
+
+<section id="exoplanetas">
+
+    <h2>🪐 LOS EXOPLANETAS</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Exoplanets2018.jpg" alt="Exoplanetas">
+
+    <div class="card">
+
+        <h3>🌍 ¿Qué es un exoplaneta?</h3>
+
+        <p>
+
+            Un exoplaneta, también llamado planeta extrasolar, es un planeta que orbita una estrella distinta al Sol. Estos mundos pueden ser muy diferentes a los planetas de nuestro Sistema Solar y presentan una gran variedad de tamaños, composiciones y temperaturas.
+
+        </p>
+
+        <p>
+
+            Desde la década de 1990 se han confirmado miles de exoplanetas gracias a telescopios espaciales y observatorios terrestres. Cada nuevo descubrimiento ayuda a comprender mejor cómo se forman y evolucionan los sistemas planetarios.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📜 Historia del descubrimiento</h3>
+
+        <p>
+
+            Durante siglos los astrónomos sospecharon que otras estrellas podían tener planetas, pero no existían pruebas.
+
+        </p>
+
+        <ul>
+
+            <li>📅 1992: se descubrieron los primeros planetas alrededor de un púlsar.</li>
+
+            <li>📅 1995: se confirmó el primer exoplaneta alrededor de una estrella similar al Sol.</li>
+
+            <li>🚀 2009: el telescopio espacial Kepler comenzó una misión dedicada a buscar exoplanetas.</li>
+
+            <li>🛰️ 2018: el telescopio TESS inició la búsqueda de nuevos mundos cercanos.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🔭 ¿Cómo se descubren?</h3>
+
+        <p>
+
+            Como los exoplanetas suelen ser muy pequeños y poco brillantes en comparación con sus estrellas, los científicos utilizan métodos indirectos para detectarlos.
+
+        </p>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Método</th>
+
+                <th>Descripción</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Tránsito</td>
+
+                <td>El planeta pasa delante de su estrella y reduce ligeramente su brillo.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Velocidad radial</td>
+
+                <td>La gravedad del planeta hace que la estrella oscile ligeramente.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Imagen directa</td>
+
+                <td>En algunos casos es posible fotografiar el planeta.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Microlente gravitacional</td>
+
+                <td>La gravedad de una estrella amplifica la luz de otra más lejana.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Astrometría</td>
+
+                <td>Mide pequeños cambios en la posición aparente de una estrella.</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌍 La zona habitable</h3>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Diagram_Habitable_Zone.png" alt="Zona Habitable">
+
+        <p>
+
+            La zona habitable es la región alrededor de una estrella donde, en principio, un planeta podría mantener agua líquida en su superficie si tuviera una atmósfera adecuada.
+
+        </p>
+
+        <p>
+
+            Estar en la zona habitable no garantiza la existencia de vida, pero hace que el planeta sea especialmente interesante para futuras investigaciones.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌎 Tipos de exoplanetas</h3>
+
+        <ul>
+
+            <li>🌍 Planetas rocosos.</li>
+
+            <li>🌋 Supertierras.</li>
+
+            <li>🌫️ Mini-Neptunos.</li>
+
+            <li>🪐 Gigantes gaseosos.</li>
+
+            <li>🔥 Júpiteres calientes.</li>
+
+            <li>❄️ Mundos helados.</li>
+
+            <li>🌊 Posibles mundos oceánicos.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Comparación</h3>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Tipo</th>
+
+                <th>Características</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Rocoso</td>
+
+                <td>Similar a la Tierra o Marte.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Supertierra</td>
+
+                <td>Más grande que la Tierra, pero menor que Neptuno.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Mini-Neptuno</td>
+
+                <td>Con abundantes gases y atmósfera espesa.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Gigante gaseoso</td>
+
+                <td>Parecido a Júpiter o Saturno.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Júpiter caliente</td>
+
+                <td>Gigante gaseoso muy cercano a su estrella.</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🌟 Datos curiosos</h3>
+
+        <ul>
+
+            <li>⭐ Se han confirmado miles de exoplanetas.</li>
+
+            <li>🌌 Algunos tienen varios soles en su cielo.</li>
+
+            <li>🔥 Hay planetas con temperaturas de miles de grados.</li>
+
+            <li>❄️ Otros permanecen extremadamente fríos.</li>
+
+            <li>🌊 Algunos candidatos podrían albergar océanos bajo ciertas condiciones.</li>
+
+            <li>🛰️ Cada año se descubren nuevos sistemas planetarios.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📝 Ejercicios</h3>
+
+        <ol>
+
+            <li>¿Qué es un exoplaneta?</li>
+
+            <li>¿Qué misión comenzó en 2009?</li>
+
+            <li>¿Qué método detecta una disminución en el brillo de una estrella?</li>
+
+            <li>¿Qué es la zona habitable?</li>
+
+            <li>¿Qué es un Júpiter caliente?</li>
+
+            <li>¿Qué diferencia hay entre una supertierra y un mini-Neptuno?</li>
+
+            <li>¿Por qué es difícil observar exoplanetas directamente?</li>
+
+            <li>¿Qué método mide el movimiento de una estrella debido a un planeta?</li>
+
+            <li>¿Puede existir agua líquida en algunos exoplanetas?</li>
+
+            <li>¿Por qué es importante estudiar los exoplanetas?</li>
+
+        </ol>
+
+        <button onclick="alert(
+'1. Un planeta que orbita otra estrella distinta al Sol.\
+\n2. La misión Kepler.\
+\n3. El método del tránsito.\
+\n4. La región donde podría existir agua líquida.\
+\n5. Un gigante gaseoso muy cercano a su estrella.\
+\n6. La supertierra es más rocosa; el mini-Neptuno suele tener una atmósfera más espesa.\
+\n7. Porque son pequeños y quedan ocultos por el brillo de sus estrellas.\
+\n8. La velocidad radial.\
+\n9. Sí, si se cumplen las condiciones adecuadas.\
+\n10. Porque ayuda a comprender cómo se forman los planetas y a buscar posibles mundos habitables.'
+)">
+Ver respuestas
+</button>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PARTE 13.4 - COMPARADOR DE EXOPLANETAS -->
+<!-- ================================================= -->
+
+<section id="comparador-exoplanetas">
+
+    <h2>⚖️ Comparador de Exoplanetas</h2>
+
+    <p>
+
+        Selecciona dos exoplanetas para comparar sus características principales.
+
+    </p>
+
+    <div class="comparador">
+
+        <div>
+
+            <label><b>Planeta 1</b></label>
+
+            <select id="planeta1">
+
+<option value="proxima">Proxima Centauri b</option>
+<option value="trappist">TRAPPIST-1e</option>
+<option value="kepler452">Kepler-452b</option>
+<option value="pegasi">51 Pegasi b</option>
+<option value="toi700">TOI-700 d</option>
+<option value="lhs">LHS 1140 b</option>
+
+</select>
+
+        </div>
+
+        <div>
+
+            <label><b>Planeta 2</b></label>
+
+            <select id="planeta2">
+
+<option value="trappist">TRAPPIST-1e</option>
+<option value="proxima">Proxima Centauri b</option>
+<option value="kepler452">Kepler-452b</option>
+<option value="pegasi">51 Pegasi b</option>
+<option value="toi700">TOI-700 d</option>
+<option value="lhs">LHS 1140 b</option>
+
+</select>
+
+        </div>
+
+        <button onclick="compararPlanetas()">
+
+Comparar
+
+</button>
+
+    </div>
+
+    <div id="resultadoComparacion" class="card" style="margin-top:30px; display:none;">
+
+        <h3>📊 Resultado de la comparación</h3>
+
+        <table border="1" cellpadding="10" width="100%">
+
+            <tr>
+
+                <th>Característica</th>
+
+                <th id="nombre1"></th>
+
+                <th id="nombre2"></th>
+
+            </tr>
+
+            <tr>
+
+                <td>Tipo</td>
+
+                <td id="tipo1"></td>
+
+                <td id="tipo2"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Zona habitable</td>
+
+                <td id="zona1"></td>
+
+                <td id="zona2"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Distancia</td>
+
+                <td id="dist1"></td>
+
+                <td id="dist2"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Descubrimiento</td>
+
+                <td id="desc1"></td>
+
+                <td id="desc2"></td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<style>
+    .comparador {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 25px 0;
+    }
+    
+    .comparador select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .comparador button {
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        background: #1976d2;
+        color: white;
+        transition: .3s;
+    }
+    
+    .comparador button:hover {
+        background: #0d47a1;
+        transform: scale(1.03);
+    }
+</style>
+
+<script>
+    const exoplanetas = {
+
+        proxima: {
+            nombre: "Proxima Centauri b",
+            tipo: "Rocoso",
+            zona: "Sí (candidato)",
+            distancia: "4.24 años luz",
+            desc: "2016"
+        },
+
+        trappist: {
+            nombre: "TRAPPIST-1e",
+            tipo: "Rocoso",
+            zona: "Sí",
+            distancia: "39 años luz",
+            desc: "2017"
+        },
+
+        kepler452: {
+            nombre: "Kepler-452b",
+            tipo: "Supertierra",
+            zona: "Sí (candidato)",
+            distancia: "1400 años luz",
+            desc: "2015"
+        },
+
+        pegasi: {
+            nombre: "51 Pegasi b",
+            tipo: "Júpiter caliente",
+            zona: "No",
+            distancia: "50 años luz",
+            desc: "1995"
+        },
+
+        toi700: {
+            nombre: "TOI-700 d",
+            tipo: "Rocoso",
+            zona: "Sí",
+            distancia: "100 años luz",
+            desc: "2020"
+        },
+
+        lhs: {
+            nombre: "LHS 1140 b",
+            tipo: "Supertierra",
+            zona: "Sí",
+            distancia: "49 años luz",
+            desc: "2017"
+        }
+
+    };
+
+    function compararPlanetas() {
+
+        let p1 = exoplanetas[document.getElementById("planeta1").value];
+
+        let p2 = exoplanetas[document.getElementById("planeta2").value];
+
+        document.getElementById("resultadoComparacion").style.display = "block";
+
+        document.getElementById("nombre1").innerHTML = p1.nombre;
+        document.getElementById("nombre2").innerHTML = p2.nombre;
+
+        document.getElementById("tipo1").innerHTML = p1.tipo;
+        document.getElementById("tipo2").innerHTML = p2.tipo;
+
+        document.getElementById("zona1").innerHTML = p1.zona;
+        document.getElementById("zona2").innerHTML = p2.zona;
+
+        document.getElementById("dist1").innerHTML = p1.distancia;
+        document.getElementById("dist2").innerHTML = p2.distancia;
+
+        document.getElementById("desc1").innerHTML = p1.desc;
+        document.getElementById("desc2").innerHTML = p2.desc;
+
+    }
+</script>
+
+<section id="fases-luna" class="seccion">
+
+    <h2>🌙 Fases de la Luna</h2>
+
+    <p class="descripcion">
+        La Luna cambia de apariencia durante un ciclo de aproximadamente 29,5 días debido a la posición relativa entre la Tierra, la Luna y el Sol.
+    </p>
+
+    <div class="grid-luna">
+
+        <div class="fase" onclick="mostrarFase('nueva')">
+            <div class="icono-luna">🌑</div>
+            <h3>Luna Nueva</h3>
+            <p>Inicio del ciclo lunar.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('creciente')">
+            <div class="icono-luna">🌒</div>
+            <h3>Luna Creciente</h3>
+            <p>La iluminación comienza a aumentar.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('cuarto')">
+            <div class="icono-luna">🌓</div>
+            <h3>Cuarto Creciente</h3>
+            <p>La mitad de la Luna está iluminada.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('gibosa')">
+            <div class="icono-luna">🌔</div>
+            <h3>Gibosa Creciente</h3>
+            <p>Más de la mitad iluminada.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('llena')">
+            <div class="icono-luna">🌕</div>
+            <h3>Luna Llena</h3>
+            <p>La Luna completamente iluminada.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('gibosam')">
+            <div class="icono-luna">🌖</div>
+            <h3>Gibosa Menguante</h3>
+            <p>Empieza a disminuir la iluminación.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('cuartom')">
+            <div class="icono-luna">🌗</div>
+            <h3>Cuarto Menguante</h3>
+            <p>Solo queda iluminada la mitad.</p>
+        </div>
+
+        <div class="fase" onclick="mostrarFase('menguante')">
+            <div class="icono-luna">🌘</div>
+            <h3>Luna Menguante</h3>
+            <p>Última fase antes de comenzar un nuevo ciclo.</p>
+        </div>
+
+    </div>
+
+    <div id="panelLuna">
+
+        <h2>Selecciona una fase</h2>
+
+        <p>Haz clic sobre cualquiera de las fases para conocer más información.</p>
+
+    </div>
+
+</section>
+
+<footer>
+    <hr>
+
+    <p>© 2026 Eiden Elías . Todos los derechos reservados.</p>
+
+    <p>Mega Enciclopedia de Astronomía</p>
+
+    <p>Prohibida la reproducción total o parcial sin autorización del autor.</p>
+
+</footer>
